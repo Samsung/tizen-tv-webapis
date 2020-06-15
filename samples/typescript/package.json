@@ -1,0 +1,37 @@
+{
+    "name": "sample-typescript",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "concurrently --kill-others \"npm run webpack\" \"npm run wits-start\"",
+        "webpack": "webpack --watch",
+        "wits-init": "wits --init",
+        "wits-start": "wits --start",
+        "checkSerial": "sdb devices",
+        "build": "tizen build-web --exclude node_modules/* -- ./",
+        "pkg": "tizen package --type wgt -- .buildResult/ --output ./ --sign ",
+        "install-pkg": "tizen install --name TsTizenWebApp.wgt -- ./ --serial %SERIAL%",
+        "uninstall": "tizen uninstall --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%",
+        "launch": "tizen run --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@tizentv/wits": "^2.1.3",
+        "@types/node": "^12.12.14",
+        "concurrently": "^5.2.0",
+        "glob": "^7.1.6",
+        "prettier": "^1.19.1",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.6.4",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.11"
+    },
+    "dependencies": {
+        "@tizentv/tizen-tv-webapis": "file:../..",
+        "@types/tizen-tv-webapis": "file:../../../types-tizen-tv-webapis"
+    }
+}

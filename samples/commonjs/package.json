@@ -1,0 +1,35 @@
+{
+    "name": "sample-commonjs",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "concurrently --kill-others \"npm run webpack\" \"npm run wits-start\"",
+        "webpack": "webpack --watch",
+        "wits-init": "wits --init",
+        "wits-start": "wits --start",
+        "checkSerial": "sdb devices",
+        "build": "tizen build-web --exclude node_modules/* -- ./",
+        "pkg": "tizen package --type wgt -- .buildResult/ --output ./ --sign ",
+        "install-pkg": "tizen install --name SampleCommonjs.wgt -- ./ --serial %SERIAL%",
+        "uninstall": "tizen uninstall --pkgid RD21NtcWos.SampleCommonjs --serial %SERIAL%",
+        "launch": "tizen run --pkgid RD21NtcWos.SampleCommonjs --serial %SERIAL%"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "@tizentv/wits": "^2.1.3",
+        "babel-loader": "^8.1.0",
+        "concurrently": "^5.2.0",
+        "glob": "^7.1.6",
+        "webpack": "^4.41.2",
+        "webpack-cli": "^3.3.11"
+    },
+    "dependencies": {
+        "@tizentv/tizen-tv-webapis": "file:../.."
+    }
+}

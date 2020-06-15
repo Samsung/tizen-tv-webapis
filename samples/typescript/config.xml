@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/CommonjsWebapisSample" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="tE56cTDSwO.SampleTypescript" package="tE56cTDSwO" required_version="3.0"/>
+    <access origin="*" subdomains="true"></access>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>SampleTypescript</name>
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="5.5"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+    <tizen:profile name="tv-samsung"/>
+</widget>

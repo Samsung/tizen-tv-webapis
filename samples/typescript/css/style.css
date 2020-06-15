@@ -1,0 +1,61 @@
+body {
+    background-color: whitesmoke;
+    width: 1920px;
+    height: 1080px;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+header > p {
+    margin-left: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px;
+    width: 1920px;
+    height: 270px;
+    float: left;
+    margin-top: 150px;
+}
+
+.information-wrapper {
+    float: left;
+    width: 1920px;
+    height: 90px;
+}
+
+.information-title {
+    float: left;
+    text-align: left;
+    width: 20%;
+    line-height: 90px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.information-value {
+    float: left;
+    text-align: left;
+    width: 70%;
+    line-height: 90px;
+    font-size: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer > span {
+    vertical-align: bottom;
+    float: right;
+    margin: 30px;
+    font-size: 20px;
+}
