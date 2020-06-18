@@ -22,7 +22,7 @@
     "devDependencies": {
         "@babel/core": "^7.10.2",
         "@babel/preset-env": "^7.10.2",
-        "@tizentv/wits": "^2.1.5",
+        "@tizentv/wits": "latest",
         "babel-loader": "^8.1.0",
         "concurrently": "^5.2.0",
         "glob": "^7.1.6",
