@@ -71,7 +71,8 @@ We offer two samples for common js and typescript.
 
 1. Move to the path
 2. npm install
-3. npm run start
+3. npm run wits-init (To use WITs **Live reload feature**)
+4. npm run start
 
 ### typescript (webpack + ts-loader)
 
@@ -80,4 +81,5 @@ We offer two samples for common js and typescript.
 
 1. Move to the path
 2. npm install
-3. npm run start
+3. npm run wits-init (To use WITs **Live reload feature**)
+4. npm run start
