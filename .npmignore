@@ -1,1 +1,11 @@
 node_modules
+samples/commonjs/node_modules
+samples/commonjs/debug.log
+samples/commonjs/.witsconfig.json
+samples/commonjs/.witsignore
+samples/commonjs/dist
+samples/typescript/node_modules
+samples/typescript/debug.log
+samples/typescript/.witsconfig.json
+samples/typescript/.witsignore
+samples/typescript/dist
