@@ -1,6 +1,6 @@
 const { sso } = window.webapis;
 
-const {
+export const {
     getVersion,
     showAccountView,
     getGuid,
@@ -8,12 +8,3 @@ const {
     getLoginStatus,
     showCreateAccountView
 } = sso;
-
-module.exports = {
-    getVersion,
-    showAccountView,
-    getGuid,
-    getLoginUid,
-    getLoginStatus,
-    showCreateAccountView
-};

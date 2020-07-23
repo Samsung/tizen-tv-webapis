@@ -1,6 +1,6 @@
 const { billing } = window.webapis;
 
-const {
+export const {
     getVersion,
     buyItem,
     getProductsList,
@@ -11,15 +11,3 @@ const {
     cancelSubscription,
     isServiceAvailable
 } = billing;
-
-module.exports = {
-    getVersion,
-    buyItem,
-    getProductsList,
-    applyInvoice,
-    verifyInvoice,
-    getServiceCountryAvailability,
-    getUserPurchaseList,
-    cancelSubscription,
-    isServiceAvailable
-};

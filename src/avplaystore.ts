@@ -1,7 +1,3 @@
 const { avplaystore } = window.webapis;
 
-const { getPlayer } = avplaystore;
-
-module.exports = {
-    getPlayer
-};
+export const { getPlayer } = avplaystore;

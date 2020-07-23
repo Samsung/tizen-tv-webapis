@@ -1,15 +1,8 @@
 const { avinfo } = window.webapis;
 
-const {
+export const {
     AvInfoDigitalCompMode,
     getVersion,
     getDolbyDigitalCompMode,
     isHdrTvSupport
 } = avinfo;
-
-module.exports = {
-    AvInfoDigitalCompMode,
-    getVersion,
-    getDolbyDigitalCompMode,
-    isHdrTvSupport
-};

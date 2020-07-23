@@ -1,6 +1,6 @@
 const { network } = window.webapis;
 
-const {
+export const {
     getVersion,
     isConnectedToGateway,
     getIpMode,
@@ -28,27 +28,3 @@ const {
     NetworkWiFiSecurityMode,
     NetworkWiFiEncryptionType
 } = network;
-
-module.exports = {
-    getVersion,
-    isConnectedToGateway,
-    getIpMode,
-    getSubnetMask,
-    getGateway,
-    getMac,
-    getDns,
-    getIp,
-    getTVName,
-    getActiveConnectionType,
-    addNetworkStateChangeListener,
-    removeNetworkStateChangeListener,
-    getWiFiSsid,
-    getWiFiSignalStrengthLevel,
-    getWiFiSecurityMode,
-    getWiFiEncryptionType,
-    getSecondaryDns,
-    setDhcpOption60Field,
-    removeDhcpOption60Field,
-    getCurrentDhcpOption60Field,
-    checkCurrentIpWith60Field
-};
