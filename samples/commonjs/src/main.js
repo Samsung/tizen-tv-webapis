@@ -1,4 +1,4 @@
-import { productinfo } from '@tizentv/tizen-tv-webapis';
+import { productinfo } from 'tizen-tv-webapis';
 
 const { getFirmware, getDuid, getModelCode } = productinfo;
 
