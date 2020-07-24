@@ -1,6 +1,6 @@
-# @tizentv/tizen-tv-webapis
+# tizen-tv-webapis
 
-`@tizentv/tizen-tv-webapis` package is for supporting [Samsung TV Product API](https://developer.samsung.com/smarttv/develop/api-references/samsung-product-api-references.html) as `commonjs` style.
+`tizen-tv-webapis` package is for supporting [Samsung TV Product API](https://developer.samsung.com/smarttv/develop/api-references/samsung-product-api-references.html) as `commonjs` style.
 Now we are supporting it for Typescript developers.
 Please note that, In order to use this pacakge, `@types/tizen-tv-webapis` is required.
 
@@ -24,7 +24,7 @@ Please note that, In order to use this pacakge, `@types/tizen-tv-webapis` is req
 -   Common js
 
 ```sh
-npm install @tizentv/tizen-tv-webapis
+npm install tizen-tv-webapis
 ```
 
 ```html
@@ -34,7 +34,7 @@ npm install @tizentv/tizen-tv-webapis
 
 ```js
 // js
-const avinfo = require('@tizentv/tizen-tv-webapis');
+const avinfo = require('tizen-tv-webapis');
 const { getVersion, getDolbyDigitalCompMode, isHdrTvSupport } = avinfo;
 
 getVersion();
@@ -43,7 +43,7 @@ getVersion();
 -   Typescript
 
 ```sh
-npm install @tizentv/tizen-tv-webapis
+npm install tizen-tv-webapis
 npm install @types/tizen-tv-webapis
 ```
 
@@ -54,7 +54,7 @@ npm install @types/tizen-tv-webapis
 
 ```ts
 // ts
-import { avinfo } from '@tizentv/tizen-tv-webapis';
+import { avinfo } from 'tizen-tv-webapis';
 const { getVersion, getDolbyDigitalCompMode, isHdrTvSupport } = avinfo;
 
 getVersion();
