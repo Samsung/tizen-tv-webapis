@@ -8,3 +8,14 @@ export const {
     getLoginStatus,
     showCreateAccountView
 } = sso;
+
+export enum SsoLoginState {
+    /**
+     * Not logged in
+     */
+    SSO_NOT_LOGIN = 0,
+    /**
+     * Logged in
+     */
+    SSO_LOGIN = 1
+}

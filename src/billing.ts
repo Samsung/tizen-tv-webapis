@@ -11,3 +11,8 @@ export const {
     cancelSubscription,
     isServiceAvailable
 } = billing;
+
+export enum TVServerType {
+    DEV = 'DEV',
+    PRD = 'PRD'
+}
