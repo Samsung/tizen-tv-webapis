@@ -1,6 +1,6 @@
 const { productinfo } = window.webapis;
 
-const {
+export const {
     ProductInfoConfigKey,
     ProductInfoNoGlass3dSupport,
     ProductInfoSiServerType,
@@ -27,31 +27,3 @@ const {
     isUHDAModel,
     isDisplayRotatorSupported
 } = productinfo;
-
-module.exports = {
-    ProductInfoConfigKey,
-    ProductInfoNoGlass3dSupport,
-    ProductInfoSiServerType,
-    getVersion,
-    getFirmware,
-    getDuid,
-    getModelCode,
-    getModel,
-    getSmartTVServerType,
-    getSmartTVServerVersion,
-    getTunerEpop,
-    isSoccerModeEnabled,
-    isTtvSupported,
-    isUdPanelSupported,
-    is8KPanelSupported,
-    getRealModel,
-    isWallModel,
-    getNoGlass3dSupport,
-    getLocalSet,
-    getSystemConfig,
-    setSystemConfig,
-    addSystemConfigChangeListener,
-    removeSystemConfigChangeListener,
-    isUHDAModel,
-    isDisplayRotatorSupported
-};

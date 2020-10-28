@@ -30,6 +30,6 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "@tizentv/tizen-tv-webapis": "latest"
+        "tizen-tv-webapis": "../.."
     }
 }

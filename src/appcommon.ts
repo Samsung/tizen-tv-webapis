@@ -1,9 +1,7 @@
 const { appcommon } = window.webapis;
 
-const { getVersion, setScreenSaver, AppCommonScreenSaverState } = appcommon;
-
-module.exports = {
+export const {
     getVersion,
     setScreenSaver,
     AppCommonScreenSaverState
-};
+} = appcommon;

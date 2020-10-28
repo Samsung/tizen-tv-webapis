@@ -1,6 +1,6 @@
 const { billing } = window.webapis;
 
-const {
+export const {
     getVersion,
     buyItem,
     getProductsList,
@@ -12,14 +12,7 @@ const {
     isServiceAvailable
 } = billing;
 
-module.exports = {
-    getVersion,
-    buyItem,
-    getProductsList,
-    applyInvoice,
-    verifyInvoice,
-    getServiceCountryAvailability,
-    getUserPurchaseList,
-    cancelSubscription,
-    isServiceAvailable
-};
+export enum TVServerType {
+    DEV = 'DEV',
+    PRD = 'PRD'
+}

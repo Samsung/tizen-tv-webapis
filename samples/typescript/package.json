@@ -31,7 +31,7 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "@tizentv/tizen-tv-webapis": "latest",
+        "tizen-tv-webapis": "../..",
         "@types/tizen-tv-webapis": "file:../../../types-tizen-tv-webapis"
     }
 }
