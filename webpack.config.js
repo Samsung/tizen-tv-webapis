@@ -18,7 +18,7 @@ module.exports = {
     },
     target: 'node',
     devtool: false,
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             {

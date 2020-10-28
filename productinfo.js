@@ -1,1 +1,118 @@
-!function(e,t){for(var o in t)e[o]=t[o]}(this,function(e){var t={};function o(r){if(t[r])return t[r].exports;var n=t[r]={i:r,l:!1,exports:{}};return e[r].call(n.exports,n,n.exports,o),n.l=!0,n.exports}return o.m=e,o.c=t,o.d=function(e,t,r){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(o.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)o.d(r,n,function(t){return e[t]}.bind(null,n));return r},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="",o(o.s=22)}({22:function(e,t,o){e.exports=o(7)},7:function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.isDisplayRotatorSupported=t.isUHDAModel=t.removeSystemConfigChangeListener=t.addSystemConfigChangeListener=t.setSystemConfig=t.getSystemConfig=t.getLocalSet=t.getNoGlass3dSupport=t.isWallModel=t.getRealModel=t.is8KPanelSupported=t.isUdPanelSupported=t.isTtvSupported=t.isSoccerModeEnabled=t.getTunerEpop=t.getSmartTVServerVersion=t.getSmartTVServerType=t.getModel=t.getModelCode=t.getDuid=t.getFirmware=t.getVersion=t.ProductInfoSiServerType=t.ProductInfoNoGlass3dSupport=t.ProductInfoConfigKey=void 0;const{productinfo:r}=window.webapis;t.ProductInfoConfigKey=r.ProductInfoConfigKey,t.ProductInfoNoGlass3dSupport=r.ProductInfoNoGlass3dSupport,t.ProductInfoSiServerType=r.ProductInfoSiServerType,t.getVersion=r.getVersion,t.getFirmware=r.getFirmware,t.getDuid=r.getDuid,t.getModelCode=r.getModelCode,t.getModel=r.getModel,t.getSmartTVServerType=r.getSmartTVServerType,t.getSmartTVServerVersion=r.getSmartTVServerVersion,t.getTunerEpop=r.getTunerEpop,t.isSoccerModeEnabled=r.isSoccerModeEnabled,t.isTtvSupported=r.isTtvSupported,t.isUdPanelSupported=r.isUdPanelSupported,t.is8KPanelSupported=r.is8KPanelSupported,t.getRealModel=r.getRealModel,t.isWallModel=r.isWallModel,t.getNoGlass3dSupport=r.getNoGlass3dSupport,t.getLocalSet=r.getLocalSet,t.getSystemConfig=r.getSystemConfig,t.setSystemConfig=r.setSystemConfig,t.addSystemConfigChangeListener=r.addSystemConfigChangeListener,t.removeSystemConfigChangeListener=r.removeSystemConfigChangeListener,t.isUHDAModel=r.isUHDAModel,t.isDisplayRotatorSupported=r.isDisplayRotatorSupported}}));
+(function(e, a) { for(var i in a) e[i] = a[i]; }(this, /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/productinfo.ts":
+/*!****************************!*\
+  !*** ./src/productinfo.ts ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isDisplayRotatorSupported = exports.isUHDAModel = exports.removeSystemConfigChangeListener = exports.addSystemConfigChangeListener = exports.setSystemConfig = exports.getSystemConfig = exports.getLocalSet = exports.getNoGlass3dSupport = exports.isWallModel = exports.getRealModel = exports.is8KPanelSupported = exports.isUdPanelSupported = exports.isTtvSupported = exports.isSoccerModeEnabled = exports.getTunerEpop = exports.getSmartTVServerVersion = exports.getSmartTVServerType = exports.getModel = exports.getModelCode = exports.getDuid = exports.getFirmware = exports.getVersion = exports.ProductInfoSiServerType = exports.ProductInfoNoGlass3dSupport = exports.ProductInfoConfigKey = void 0;
+const { productinfo } = window.webapis;
+exports.ProductInfoConfigKey = productinfo.ProductInfoConfigKey, exports.ProductInfoNoGlass3dSupport = productinfo.ProductInfoNoGlass3dSupport, exports.ProductInfoSiServerType = productinfo.ProductInfoSiServerType, exports.getVersion = productinfo.getVersion, exports.getFirmware = productinfo.getFirmware, exports.getDuid = productinfo.getDuid, exports.getModelCode = productinfo.getModelCode, exports.getModel = productinfo.getModel, exports.getSmartTVServerType = productinfo.getSmartTVServerType, exports.getSmartTVServerVersion = productinfo.getSmartTVServerVersion, exports.getTunerEpop = productinfo.getTunerEpop, exports.isSoccerModeEnabled = productinfo.isSoccerModeEnabled, exports.isTtvSupported = productinfo.isTtvSupported, exports.isUdPanelSupported = productinfo.isUdPanelSupported, exports.is8KPanelSupported = productinfo.is8KPanelSupported, exports.getRealModel = productinfo.getRealModel, exports.isWallModel = productinfo.isWallModel, exports.getNoGlass3dSupport = productinfo.getNoGlass3dSupport, exports.getLocalSet = productinfo.getLocalSet, exports.getSystemConfig = productinfo.getSystemConfig, exports.setSystemConfig = productinfo.setSystemConfig, exports.addSystemConfigChangeListener = productinfo.addSystemConfigChangeListener, exports.removeSystemConfigChangeListener = productinfo.removeSystemConfigChangeListener, exports.isUHDAModel = productinfo.isUHDAModel, exports.isDisplayRotatorSupported = productinfo.isDisplayRotatorSupported;
+
+
+/***/ }),
+
+/***/ 8:
+/*!**********************************!*\
+  !*** multi ./src/productinfo.ts ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/productinfo.ts */"./src/productinfo.ts");
+
+
+/***/ })
+
+/******/ })));

@@ -1,1 +1,546 @@
-!function(e,t){for(var o in t)e[o]=t[o]}(this,function(e){var t={};function o(n){if(t[n])return t[n].exports;var i=t[n]={i:n,l:!1,exports:{}};return e[n].call(i.exports,i,i.exports,o),i.l=!0,i.exports}return o.m=e,o.c=t,o.d=function(e,t,n){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:n})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var i in e)o.d(n,i,function(t){return e[t]}.bind(null,i));return n},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="",o(o.s=12)}([function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.AppCommonScreenSaverState=t.getTIFA=t.isLATEnabled=t.getVersion=void 0;const{adinfo:n}=window.webapis;t.getVersion=n.getVersion,t.isLATEnabled=n.isLATEnabled,t.getTIFA=n.getTIFA,function(e){e[e.SCREEN_SAVER_OFF=0]="SCREEN_SAVER_OFF",e[e.SCREEN_SAVER_ON=1]="SCREEN_SAVER_ON"}(t.AppCommonScreenSaverState||(t.AppCommonScreenSaverState={}))},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.AppCommonScreenSaverState=t.setScreenSaver=t.getVersion=void 0;const{appcommon:n}=window.webapis;t.getVersion=n.getVersion,t.setScreenSaver=n.setScreenSaver,t.AppCommonScreenSaverState=n.AppCommonScreenSaverState},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.isHdrTvSupport=t.getDolbyDigitalCompMode=t.getVersion=t.AvInfoDigitalCompMode=void 0;const{avinfo:n}=window.webapis;t.AvInfoDigitalCompMode=n.AvInfoDigitalCompMode,t.getVersion=n.getVersion,t.getDolbyDigitalCompMode=n.getDolbyDigitalCompMode,t.isHdrTvSupport=n.isHdrTvSupport},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.AVPlayEvent=t.AVPlayError=t.AVPlayStreamType=t.AVPlayDrmOperation=t.AVPlayDrmType=t.AVPlayStreamingPropertyType=t.AVPlayBufferSizeUnit=t.AVPlayBufferOption=t.AVPlayDisplayMode=t.AVPlayPlayerState=t.restoreAsync=t.restore=t.suspend=t.getVersion=t.getStreamingProperty=t.setStreamingProperty=t.getTotalTrackInfo=t.getCurrentStreamInfo=t.setSelectTrack=t.setDisplayMethod=t.setSubtitlePosition=t.setExternalSubtitlePath=t.setSilentSubtitle=t.unsetSoundAnalysisListener=t.setSoundAnalysisListener=t.getUID=t.setDrm=t.setListener=t.setSpeed=t.setBufferingParam=t.setTimeoutForBuffering=t.getCurrentTime=t.getDuration=t.jumpBackward=t.jumpForward=t.pause=t.getState=t.stop=t.seekTo=t.play=t.setDisplayRect=t.prepareAsync=t.prepare=t.close=t.open=void 0;const{avplay:n}=window.webapis;t.open=n.open,t.close=n.close,t.prepare=n.prepare,t.prepareAsync=n.prepareAsync,t.setDisplayRect=n.setDisplayRect,t.play=n.play,t.seekTo=n.seekTo,t.stop=n.stop,t.getState=n.getState,t.pause=n.pause,t.jumpForward=n.jumpForward,t.jumpBackward=n.jumpBackward,t.getDuration=n.getDuration,t.getCurrentTime=n.getCurrentTime,t.setTimeoutForBuffering=n.setTimeoutForBuffering,t.setBufferingParam=n.setBufferingParam,t.setSpeed=n.setSpeed,t.setListener=n.setListener,t.setDrm=n.setDrm,t.getUID=n.getUID,t.setSoundAnalysisListener=n.setSoundAnalysisListener,t.unsetSoundAnalysisListener=n.unsetSoundAnalysisListener,t.setSilentSubtitle=n.setSilentSubtitle,t.setExternalSubtitlePath=n.setExternalSubtitlePath,t.setSubtitlePosition=n.setSubtitlePosition,t.setDisplayMethod=n.setDisplayMethod,t.setSelectTrack=n.setSelectTrack,t.getCurrentStreamInfo=n.getCurrentStreamInfo,t.getTotalTrackInfo=n.getTotalTrackInfo,t.setStreamingProperty=n.setStreamingProperty,t.getStreamingProperty=n.getStreamingProperty,t.getVersion=n.getVersion,t.suspend=n.suspend,t.restore=n.restore,t.restoreAsync=n.restoreAsync,function(e){e.NONE="NONE",e.IDLE="IDLE",e.READY="READY",e.PLAYING="PLAYING",e.PAUSED="PAUSED"}(t.AVPlayPlayerState||(t.AVPlayPlayerState={})),function(e){e.PLAYER_DISPLAY_MODE_LETTER_BOX="PLAYER_DISPLAY_MODE_LETTER_BOX",e.PLAYER_DISPLAY_MODE_FULL_SCREEN="PLAYER_DISPLAY_MODE_FULL_SCREEN",e.PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO="PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO"}(t.AVPlayDisplayMode||(t.AVPlayDisplayMode={})),function(e){e.PLAYER_BUFFER_FOR_PLAY="PLAYER_BUFFER_FOR_PLAY",e.PLAYER_BUFFER_FOR_RESUME="PLAYER_BUFFER_FOR_RESUME"}(t.AVPlayBufferOption||(t.AVPlayBufferOption={})),function(e){e.PLAYER_BUFFER_SIZE_IN_BYTE="PLAYER_BUFFER_SIZE_IN_BYTE",e.PLAYER_BUFFER_SIZE_IN_SECOND="PLAYER_BUFFER_SIZE_IN_SECOND"}(t.AVPlayBufferSizeUnit||(t.AVPlayBufferSizeUnit={})),function(e){e.COOKIE="COOKIE",e.USER_AGENT="USER_AGENT",e.PREBUFFER_MODE="PREBUFFER_MODE",e.ADAPTIVE_INFO="ADAPTIVE_INFO",e.SET_MODE_4K="SET_MODE_4K",e.PROPERTY_HD_AUDIO="PROPERTY_HD_AUDIO",e.LISTEN_SPARSE_TRACK="LISTEN_SPARSE_TRACK",e.IS_LIVE="IS_LIVE",e.AVAILABLE_BITRATE="AVAILABLE_BITRATE",e.GET_LIVE_DURATION="GET_LIVE_DURATION",e.CURRENT_BANDWIDTH="CURRENT_BANDWIDTH",e.WIDEVINE="WIDEVINE",e.SET_VR360_MODE="SET_VR360_MODE",e.USE_VIDEOMIXER="USE_VIDEOMIXER",e.SET_MIXEDFRAME="SET_MIXEDFRAME",e.PORTRAIT_MODE="PORTRAIT_MODE"}(t.AVPlayStreamingPropertyType||(t.AVPlayStreamingPropertyType={})),function(e){e.PLAYREADY="PLAYREADY",e.EME_PLAYREADY="EME_PLAYREADY",e.VERIMATRIX="VERIMATRIX",e.WIDEVINE_CDM="WIDEVINE_CDM",e.EME_WIDEVINE_CDM="EME_WIDEVINE_CDM"}(t.AVPlayDrmType||(t.AVPlayDrmType={})),function(e){e.SetProperties="SetProperties",e.InstallLicense="InstallLicense",e.ProcessInitiator="ProcessInitiator",e.GetUID="GetUID",e.Initialize="Initialize",e.Finalize="Finalize",e.widevine_license_data="widevine_license_data",e.widevine_app_session="widevine_app_session",e.widevine_data_type="widevine_data_type"}(t.AVPlayDrmOperation||(t.AVPlayDrmOperation={})),function(e){e.VIDEO="VIDEO",e.AUDIO="AUDIO",e.TEXT="TEXT"}(t.AVPlayStreamType||(t.AVPlayStreamType={})),function(e){e.PLAYER_ERROR_NONE="PLAYER_ERROR_NONE",e.PLAYER_ERROR_INVALID_PARAMETER="PLAYER_ERROR_INVALID_PARAMETER",e.PLAYER_ERROR_NO_SUCH_FILE="PLAYER_ERROR_NO_SUCH_FILE",e.PLAYER_ERROR_INVALID_OPERATION="PLAYER_ERROR_INVALID_OPERATION",e.PLAYER_ERROR_SEEK_FAILED="PLAYER_ERROR_SEEK_FAILED",e.PLAYER_ERROR_INVALID_STATE="PLAYER_ERROR_INVALID_STATE",e.PLAYER_ERROR_NOT_SUPPORTED_FILE="PLAYER_ERROR_NOT_SUPPORTED_FILE",e.PLAYER_ERROR_NOT_SUPPORTED_FORMAT="PLAYER_ERROR_NOT_SUPPORTED_FORMAT",e.PLAYER_ERROR_INVALID_URI="PLAYER_ERROR_INVALID_URI",e.PLAYER_ERROR_CONNECTION_FAILED="PLAYER_ERROR_CONNECTION_FAILED",e.PLAYER_ERROR_GENEREIC="PLAYER_ERROR_GENEREIC"}(t.AVPlayError||(t.AVPlayError={})),function(e){e.PLAYER_MSG_NONE="PLAYER_MSG_NONE",e.PLAYER_MSG_RESOLUTION_CHANGED="PLAYER_MSG_RESOLUTION_CHANGED",e.PLAYER_MSG_BITRATE_CHANGE="PLAYER_MSG_BITRATE_CHANGE",e.PLAYER_MSG_FRAGMENT_INFO="PLAYER_MSG_FRAGMENT_INFO",e.PLAYER_SPARSE_TRACK_DETECT="PLAYER_SPARSE_TRACK_DETECT",e.PLAYER_STREAMING_EVENT="PLAYER_STREAMING_EVENT",e.PLAYER_MSG_HTTP_ERROR_CODE="PLAYER_MSG_HTTP_ERROR_CODE",e.PLAYER_MSG_DRM_CHALLENGE_DATA="PLAYER_MSG_DRM_CHALLENGE_DATA"}(t.AVPlayEvent||(t.AVPlayEvent={}))},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.getPlayer=void 0;const{avplaystore:n}=window.webapis;t.getPlayer=n.getPlayer},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.TVServerType=t.isServiceAvailable=t.cancelSubscription=t.getUserPurchaseList=t.getServiceCountryAvailability=t.verifyInvoice=t.applyInvoice=t.getProductsList=t.buyItem=t.getVersion=void 0;const{billing:n}=window.webapis;t.getVersion=n.getVersion,t.buyItem=n.buyItem,t.getProductsList=n.getProductsList,t.applyInvoice=n.applyInvoice,t.verifyInvoice=n.verifyInvoice,t.getServiceCountryAvailability=n.getServiceCountryAvailability,t.getUserPurchaseList=n.getUserPurchaseList,t.cancelSubscription=n.cancelSubscription,t.isServiceAvailable=n.isServiceAvailable,function(e){e.DEV="DEV",e.PRD="PRD"}(t.TVServerType||(t.TVServerType={}))},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.NetworkWiFiEncryptionType=t.NetworkWiFiSecurityMode=t.NetworkState=t.NetworkActiveConnectionType=t.NetworkIpMode=t.checkCurrentIpWith60Field=t.getCurrentDhcpOption60Field=t.removeDhcpOption60Field=t.setDhcpOption60Field=t.getSecondaryDns=t.getWiFiEncryptionType=t.getWiFiSecurityMode=t.getWiFiSignalStrengthLevel=t.getWiFiSsid=t.removeNetworkStateChangeListener=t.addNetworkStateChangeListener=t.getActiveConnectionType=t.getTVName=t.getIp=t.getDns=t.getMac=t.getGateway=t.getSubnetMask=t.getIpMode=t.isConnectedToGateway=t.getVersion=void 0;const{network:n}=window.webapis;t.getVersion=n.getVersion,t.isConnectedToGateway=n.isConnectedToGateway,t.getIpMode=n.getIpMode,t.getSubnetMask=n.getSubnetMask,t.getGateway=n.getGateway,t.getMac=n.getMac,t.getDns=n.getDns,t.getIp=n.getIp,t.getTVName=n.getTVName,t.getActiveConnectionType=n.getActiveConnectionType,t.addNetworkStateChangeListener=n.addNetworkStateChangeListener,t.removeNetworkStateChangeListener=n.removeNetworkStateChangeListener,t.getWiFiSsid=n.getWiFiSsid,t.getWiFiSignalStrengthLevel=n.getWiFiSignalStrengthLevel,t.getWiFiSecurityMode=n.getWiFiSecurityMode,t.getWiFiEncryptionType=n.getWiFiEncryptionType,t.getSecondaryDns=n.getSecondaryDns,t.setDhcpOption60Field=n.setDhcpOption60Field,t.removeDhcpOption60Field=n.removeDhcpOption60Field,t.getCurrentDhcpOption60Field=n.getCurrentDhcpOption60Field,t.checkCurrentIpWith60Field=n.checkCurrentIpWith60Field,t.NetworkIpMode=n.NetworkIpMode,t.NetworkActiveConnectionType=n.NetworkActiveConnectionType,t.NetworkState=n.NetworkState,t.NetworkWiFiSecurityMode=n.NetworkWiFiSecurityMode,t.NetworkWiFiEncryptionType=n.NetworkWiFiEncryptionType},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.isDisplayRotatorSupported=t.isUHDAModel=t.removeSystemConfigChangeListener=t.addSystemConfigChangeListener=t.setSystemConfig=t.getSystemConfig=t.getLocalSet=t.getNoGlass3dSupport=t.isWallModel=t.getRealModel=t.is8KPanelSupported=t.isUdPanelSupported=t.isTtvSupported=t.isSoccerModeEnabled=t.getTunerEpop=t.getSmartTVServerVersion=t.getSmartTVServerType=t.getModel=t.getModelCode=t.getDuid=t.getFirmware=t.getVersion=t.ProductInfoSiServerType=t.ProductInfoNoGlass3dSupport=t.ProductInfoConfigKey=void 0;const{productinfo:n}=window.webapis;t.ProductInfoConfigKey=n.ProductInfoConfigKey,t.ProductInfoNoGlass3dSupport=n.ProductInfoNoGlass3dSupport,t.ProductInfoSiServerType=n.ProductInfoSiServerType,t.getVersion=n.getVersion,t.getFirmware=n.getFirmware,t.getDuid=n.getDuid,t.getModelCode=n.getModelCode,t.getModel=n.getModel,t.getSmartTVServerType=n.getSmartTVServerType,t.getSmartTVServerVersion=n.getSmartTVServerVersion,t.getTunerEpop=n.getTunerEpop,t.isSoccerModeEnabled=n.isSoccerModeEnabled,t.isTtvSupported=n.isTtvSupported,t.isUdPanelSupported=n.isUdPanelSupported,t.is8KPanelSupported=n.is8KPanelSupported,t.getRealModel=n.getRealModel,t.isWallModel=n.isWallModel,t.getNoGlass3dSupport=n.getNoGlass3dSupport,t.getLocalSet=n.getLocalSet,t.getSystemConfig=n.getSystemConfig,t.setSystemConfig=n.setSystemConfig,t.addSystemConfigChangeListener=n.addSystemConfigChangeListener,t.removeSystemConfigChangeListener=n.removeSystemConfigChangeListener,t.isUHDAModel=n.isUHDAModel,t.isDisplayRotatorSupported=n.isDisplayRotatorSupported},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.SsoLoginState=t.showCreateAccountView=t.getLoginStatus=t.getLoginUid=t.getGuid=t.showAccountView=t.getVersion=void 0;const{sso:n}=window.webapis;t.getVersion=n.getVersion,t.showAccountView=n.showAccountView,t.getGuid=n.getGuid,t.getLoginUid=n.getLoginUid,t.getLoginStatus=n.getLoginStatus,t.showCreateAccountView=n.showCreateAccountView,function(e){e[e.SSO_NOT_LOGIN=0]="SSO_NOT_LOGIN",e[e.SSO_LOGIN=1]="SSO_LOGIN"}(t.SsoLoginState||(t.SsoLoginState={}))},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.TvInfoValue=t.TvInfoKey=t.TvInfoMenuValue=t.TvInfoMenuKey=t.registerInAppCaptionControl=t.showCaption=t.getTvInfoValue=t.isTvsPicSizeResized=t.removeCaptionChangeListener=t.addCaptionChangeListener=t.getMenuValue=t.getVersion=void 0;const{tvinfo:n}=window.webapis;t.getVersion=n.getVersion,t.getMenuValue=n.getMenuValue,t.addCaptionChangeListener=n.addCaptionChangeListener,t.removeCaptionChangeListener=n.removeCaptionChangeListener,t.isTvsPicSizeResized=n.isTvsPicSizeResized,t.getTvInfoValue=n.getTvInfoValue,t.showCaption=n.showCaption,t.registerInAppCaptionControl=n.registerInAppCaptionControl,t.TvInfoMenuKey=n.TvInfoMenuKey,t.TvInfoMenuValue=n.TvInfoMenuValue,t.TvInfoKey=n.TvInfoKey,t.TvInfoValue=n.TvInfoValue},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.remove=t.write=t.read=t.getVersion=void 0;const{widgetdata:n}=window.webapis;t.getVersion=n.getVersion,t.read=n.read,t.write=n.write,t.remove=n.remove},function(e,t,o){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.UNKNOWN_ERR=t.SERVICE_NOT_AVAILABLE_ERR=t.IO_ERR=t.INVALID_VALUES_ERR=t.DATA_CLONE_ERR=t.INVALID_NODE_TYPE_ERR=t.TIMEOUT_ERR=t.QUOTA_EXCEEDED_ERR=t.URL_MISMATCH_ERR=t.ABORT_ERR=t.NETWORK_ERR=t.SECURITY_ERR=t.TYPE_MISMATCH_ERR=t.VALIDATION_ERR=t.INVALID_ACCESS_ERR=t.NAMESPACE_ERR=t.INVALID_MODIFICATION_ERR=t.SYNTAX_ERR=t.INVALID_STATE_ERR=t.INUSE_ATTRIBUTE_ERR=t.NOT_SUPPORTED_ERR=t.NOT_FOUND_ERR=t.NO_MODIFICATION_ALLOWED_ERR=t.NO_DATA_ALLOWED_ERR=t.INVALID_CHARACTER_ERR=t.WRONG_DOCUMENT_ERR=t.HIERARCHY_REQUEST_ERR=t.DOMSTRING_SIZE_ERR=t.INDEX_SIZE_ERR=void 0;const{WebAPIException:n}=window.webapis;t.INDEX_SIZE_ERR=n.INDEX_SIZE_ERR,t.DOMSTRING_SIZE_ERR=n.DOMSTRING_SIZE_ERR,t.HIERARCHY_REQUEST_ERR=n.HIERARCHY_REQUEST_ERR,t.WRONG_DOCUMENT_ERR=n.WRONG_DOCUMENT_ERR,t.INVALID_CHARACTER_ERR=n.INVALID_CHARACTER_ERR,t.NO_DATA_ALLOWED_ERR=n.NO_DATA_ALLOWED_ERR,t.NO_MODIFICATION_ALLOWED_ERR=n.NO_MODIFICATION_ALLOWED_ERR,t.NOT_FOUND_ERR=n.NOT_FOUND_ERR,t.NOT_SUPPORTED_ERR=n.NOT_SUPPORTED_ERR,t.INUSE_ATTRIBUTE_ERR=n.INUSE_ATTRIBUTE_ERR,t.INVALID_STATE_ERR=n.INVALID_STATE_ERR,t.SYNTAX_ERR=n.SYNTAX_ERR,t.INVALID_MODIFICATION_ERR=n.INVALID_MODIFICATION_ERR,t.NAMESPACE_ERR=n.NAMESPACE_ERR,t.INVALID_ACCESS_ERR=n.INVALID_ACCESS_ERR,t.VALIDATION_ERR=n.VALIDATION_ERR,t.TYPE_MISMATCH_ERR=n.TYPE_MISMATCH_ERR,t.SECURITY_ERR=n.SECURITY_ERR,t.NETWORK_ERR=n.NETWORK_ERR,t.ABORT_ERR=n.ABORT_ERR,t.URL_MISMATCH_ERR=n.URL_MISMATCH_ERR,t.QUOTA_EXCEEDED_ERR=n.QUOTA_EXCEEDED_ERR,t.TIMEOUT_ERR=n.TIMEOUT_ERR,t.INVALID_NODE_TYPE_ERR=n.INVALID_NODE_TYPE_ERR,t.DATA_CLONE_ERR=n.DATA_CLONE_ERR,t.INVALID_VALUES_ERR=n.INVALID_VALUES_ERR,t.IO_ERR=n.IO_ERR,t.SERVICE_NOT_AVAILABLE_ERR=n.SERVICE_NOT_AVAILABLE_ERR,t.UNKNOWN_ERR=n.UNKNOWN_ERR},function(e,t,o){e.exports=o(13)},function(e,t,o){"use strict";var n=this&&this.__createBinding||(Object.create?function(e,t,o,n){void 0===n&&(n=o),Object.defineProperty(e,n,{enumerable:!0,get:function(){return t[o]}})}:function(e,t,o,n){void 0===n&&(n=o),e[n]=t[o]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),r=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var o in e)"default"!==o&&Object.hasOwnProperty.call(e,o)&&n(t,e,o);return i(t,e),t};Object.defineProperty(t,"__esModule",{value:!0}),t.WebAPIException=t.widgetdata=t.tvinfo=t.sso=t.productinfo=t.network=t.billing=t.avplaystore=t.avplay=t.avinfo=t.appcommon=t.adinfo=t.webapis=void 0;const E=r(o(14));t.webapis=E;const R=r(o(0));t.adinfo=R;const _=r(o(1));t.appcommon=_;const a=r(o(2));t.avinfo=a;const s=r(o(3));t.avplay=s;const A=r(o(4));t.avplaystore=A;const S=r(o(5));t.billing=S;const p=r(o(6));t.network=p;const c=r(o(7));t.productinfo=c;const u=r(o(8));t.sso=u;const l=r(o(9));t.tvinfo=l;const I=r(o(10));t.widgetdata=I;const T=r(o(11));t.WebAPIException=T},function(e,t,o){"use strict";var n=this&&this.__createBinding||(Object.create?function(e,t,o,n){void 0===n&&(n=o),Object.defineProperty(e,n,{enumerable:!0,get:function(){return t[o]}})}:function(e,t,o,n){void 0===n&&(n=o),e[n]=t[o]}),i=this&&this.__setModuleDefault||(Object.create?function(e,t){Object.defineProperty(e,"default",{enumerable:!0,value:t})}:function(e,t){e.default=t}),r=this&&this.__importStar||function(e){if(e&&e.__esModule)return e;var t={};if(null!=e)for(var o in e)"default"!==o&&Object.hasOwnProperty.call(e,o)&&n(t,e,o);return i(t,e),t};Object.defineProperty(t,"__esModule",{value:!0}),t.WebAPIException=t.widgetdata=t.tvinfo=t.sso=t.productinfo=t.network=t.billing=t.avplaystore=t.avplay=t.avinfo=t.appcommon=t.adinfo=void 0;const E=r(o(0));t.adinfo=E;const R=r(o(1));t.appcommon=R;const _=r(o(2));t.avinfo=_;const a=r(o(3));t.avplay=a;const s=r(o(4));t.avplaystore=s;const A=r(o(5));t.billing=A;const S=r(o(6));t.network=S;const p=r(o(7));t.productinfo=p;const c=r(o(8));t.sso=c;const u=r(o(9));t.tvinfo=u;const l=r(o(10));t.widgetdata=l;const I=r(o(11));t.WebAPIException=I}]));
+(function(e, a) { for(var i in a) e[i] = a[i]; }(this, /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/adinfo.ts":
+/*!***********************!*\
+  !*** ./src/adinfo.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppCommonScreenSaverState = exports.getTIFA = exports.isLATEnabled = exports.getVersion = void 0;
+const { adinfo } = window.webapis;
+exports.getVersion = adinfo.getVersion, exports.isLATEnabled = adinfo.isLATEnabled, exports.getTIFA = adinfo.getTIFA;
+var AppCommonScreenSaverState;
+(function (AppCommonScreenSaverState) {
+    /**
+     * Screensaver off
+     * @since 2.3
+     */
+    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_OFF"] = 0] = "SCREEN_SAVER_OFF";
+    /**
+     * Screensaver on
+     * @since 2.3
+     */
+    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_ON"] = 1] = "SCREEN_SAVER_ON";
+})(AppCommonScreenSaverState = exports.AppCommonScreenSaverState || (exports.AppCommonScreenSaverState = {}));
+
+
+/***/ }),
+
+/***/ "./src/appcommon.ts":
+/*!**************************!*\
+  !*** ./src/appcommon.ts ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppCommonScreenSaverState = exports.setScreenSaver = exports.getVersion = void 0;
+const { appcommon } = window.webapis;
+exports.getVersion = appcommon.getVersion, exports.setScreenSaver = appcommon.setScreenSaver, exports.AppCommonScreenSaverState = appcommon.AppCommonScreenSaverState;
+
+
+/***/ }),
+
+/***/ "./src/avinfo.ts":
+/*!***********************!*\
+  !*** ./src/avinfo.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isHdrTvSupport = exports.getDolbyDigitalCompMode = exports.getVersion = exports.AvInfoDigitalCompMode = void 0;
+const { avinfo } = window.webapis;
+exports.AvInfoDigitalCompMode = avinfo.AvInfoDigitalCompMode, exports.getVersion = avinfo.getVersion, exports.getDolbyDigitalCompMode = avinfo.getDolbyDigitalCompMode, exports.isHdrTvSupport = avinfo.isHdrTvSupport;
+
+
+/***/ }),
+
+/***/ "./src/avplay.ts":
+/*!***********************!*\
+  !*** ./src/avplay.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AVPlayEvent = exports.AVPlayError = exports.AVPlayStreamType = exports.AVPlayDrmOperation = exports.AVPlayDrmType = exports.AVPlayStreamingPropertyType = exports.AVPlayBufferSizeUnit = exports.AVPlayBufferOption = exports.AVPlayDisplayMode = exports.AVPlayPlayerState = exports.restoreAsync = exports.restore = exports.suspend = exports.getVersion = exports.getStreamingProperty = exports.setStreamingProperty = exports.getTotalTrackInfo = exports.getCurrentStreamInfo = exports.setSelectTrack = exports.setDisplayMethod = exports.setSubtitlePosition = exports.setExternalSubtitlePath = exports.setSilentSubtitle = exports.unsetSoundAnalysisListener = exports.setSoundAnalysisListener = exports.getUID = exports.setDrm = exports.setListener = exports.setSpeed = exports.setBufferingParam = exports.setTimeoutForBuffering = exports.getCurrentTime = exports.getDuration = exports.jumpBackward = exports.jumpForward = exports.pause = exports.getState = exports.stop = exports.seekTo = exports.play = exports.setDisplayRect = exports.prepareAsync = exports.prepare = exports.close = exports.open = void 0;
+const { avplay } = window.webapis;
+exports.open = avplay.open, exports.close = avplay.close, exports.prepare = avplay.prepare, exports.prepareAsync = avplay.prepareAsync, exports.setDisplayRect = avplay.setDisplayRect, exports.play = avplay.play, exports.seekTo = avplay.seekTo, exports.stop = avplay.stop, exports.getState = avplay.getState, exports.pause = avplay.pause, exports.jumpForward = avplay.jumpForward, exports.jumpBackward = avplay.jumpBackward, exports.getDuration = avplay.getDuration, exports.getCurrentTime = avplay.getCurrentTime, exports.setTimeoutForBuffering = avplay.setTimeoutForBuffering, exports.setBufferingParam = avplay.setBufferingParam, exports.setSpeed = avplay.setSpeed, exports.setListener = avplay.setListener, exports.setDrm = avplay.setDrm, exports.getUID = avplay.getUID, exports.setSoundAnalysisListener = avplay.setSoundAnalysisListener, exports.unsetSoundAnalysisListener = avplay.unsetSoundAnalysisListener, exports.setSilentSubtitle = avplay.setSilentSubtitle, exports.setExternalSubtitlePath = avplay.setExternalSubtitlePath, exports.setSubtitlePosition = avplay.setSubtitlePosition, exports.setDisplayMethod = avplay.setDisplayMethod, exports.setSelectTrack = avplay.setSelectTrack, exports.getCurrentStreamInfo = avplay.getCurrentStreamInfo, exports.getTotalTrackInfo = avplay.getTotalTrackInfo, exports.setStreamingProperty = avplay.setStreamingProperty, exports.getStreamingProperty = avplay.getStreamingProperty, exports.getVersion = avplay.getVersion, exports.suspend = avplay.suspend, exports.restore = avplay.restore, exports.restoreAsync = avplay.restoreAsync;
+var AVPlayPlayerState;
+(function (AVPlayPlayerState) {
+    AVPlayPlayerState["NONE"] = "NONE";
+    AVPlayPlayerState["IDLE"] = "IDLE";
+    AVPlayPlayerState["READY"] = "READY";
+    AVPlayPlayerState["PLAYING"] = "PLAYING";
+    AVPlayPlayerState["PAUSED"] = "PAUSED";
+})(AVPlayPlayerState = exports.AVPlayPlayerState || (exports.AVPlayPlayerState = {}));
+var AVPlayDisplayMode;
+(function (AVPlayDisplayMode) {
+    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_LETTER_BOX"] = "PLAYER_DISPLAY_MODE_LETTER_BOX";
+    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_FULL_SCREEN"] = "PLAYER_DISPLAY_MODE_FULL_SCREEN";
+    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO"] = "PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO";
+})(AVPlayDisplayMode = exports.AVPlayDisplayMode || (exports.AVPlayDisplayMode = {}));
+var AVPlayBufferOption;
+(function (AVPlayBufferOption) {
+    AVPlayBufferOption["PLAYER_BUFFER_FOR_PLAY"] = "PLAYER_BUFFER_FOR_PLAY";
+    AVPlayBufferOption["PLAYER_BUFFER_FOR_RESUME"] = "PLAYER_BUFFER_FOR_RESUME";
+})(AVPlayBufferOption = exports.AVPlayBufferOption || (exports.AVPlayBufferOption = {}));
+var AVPlayBufferSizeUnit;
+(function (AVPlayBufferSizeUnit) {
+    AVPlayBufferSizeUnit["PLAYER_BUFFER_SIZE_IN_BYTE"] = "PLAYER_BUFFER_SIZE_IN_BYTE";
+    AVPlayBufferSizeUnit["PLAYER_BUFFER_SIZE_IN_SECOND"] = "PLAYER_BUFFER_SIZE_IN_SECOND";
+})(AVPlayBufferSizeUnit = exports.AVPlayBufferSizeUnit || (exports.AVPlayBufferSizeUnit = {}));
+var AVPlayStreamingPropertyType;
+(function (AVPlayStreamingPropertyType) {
+    AVPlayStreamingPropertyType["COOKIE"] = "COOKIE";
+    AVPlayStreamingPropertyType["USER_AGENT"] = "USER_AGENT";
+    AVPlayStreamingPropertyType["PREBUFFER_MODE"] = "PREBUFFER_MODE";
+    AVPlayStreamingPropertyType["ADAPTIVE_INFO"] = "ADAPTIVE_INFO";
+    AVPlayStreamingPropertyType["SET_MODE_4K"] = "SET_MODE_4K";
+    AVPlayStreamingPropertyType["PROPERTY_HD_AUDIO"] = "PROPERTY_HD_AUDIO";
+    AVPlayStreamingPropertyType["LISTEN_SPARSE_TRACK"] = "LISTEN_SPARSE_TRACK";
+    AVPlayStreamingPropertyType["IS_LIVE"] = "IS_LIVE";
+    AVPlayStreamingPropertyType["AVAILABLE_BITRATE"] = "AVAILABLE_BITRATE";
+    AVPlayStreamingPropertyType["GET_LIVE_DURATION"] = "GET_LIVE_DURATION";
+    AVPlayStreamingPropertyType["CURRENT_BANDWIDTH"] = "CURRENT_BANDWIDTH";
+    AVPlayStreamingPropertyType["WIDEVINE"] = "WIDEVINE";
+    AVPlayStreamingPropertyType["SET_VR360_MODE"] = "SET_VR360_MODE";
+    AVPlayStreamingPropertyType["USE_VIDEOMIXER"] = "USE_VIDEOMIXER";
+    AVPlayStreamingPropertyType["SET_MIXEDFRAME"] = "SET_MIXEDFRAME";
+    AVPlayStreamingPropertyType["PORTRAIT_MODE"] = "PORTRAIT_MODE";
+})(AVPlayStreamingPropertyType = exports.AVPlayStreamingPropertyType || (exports.AVPlayStreamingPropertyType = {}));
+var AVPlayDrmType;
+(function (AVPlayDrmType) {
+    AVPlayDrmType["PLAYREADY"] = "PLAYREADY";
+    AVPlayDrmType["EME_PLAYREADY"] = "EME_PLAYREADY";
+    AVPlayDrmType["VERIMATRIX"] = "VERIMATRIX";
+    AVPlayDrmType["WIDEVINE_CDM"] = "WIDEVINE_CDM";
+    AVPlayDrmType["EME_WIDEVINE_CDM"] = "EME_WIDEVINE_CDM";
+})(AVPlayDrmType = exports.AVPlayDrmType || (exports.AVPlayDrmType = {}));
+var AVPlayDrmOperation;
+(function (AVPlayDrmOperation) {
+    AVPlayDrmOperation["SetProperties"] = "SetProperties";
+    AVPlayDrmOperation["InstallLicense"] = "InstallLicense";
+    AVPlayDrmOperation["ProcessInitiator"] = "ProcessInitiator";
+    AVPlayDrmOperation["GetUID"] = "GetUID";
+    AVPlayDrmOperation["Initialize"] = "Initialize";
+    AVPlayDrmOperation["Finalize"] = "Finalize";
+    AVPlayDrmOperation["widevine_license_data"] = "widevine_license_data";
+    AVPlayDrmOperation["widevine_app_session"] = "widevine_app_session";
+    AVPlayDrmOperation["widevine_data_type"] = "widevine_data_type";
+})(AVPlayDrmOperation = exports.AVPlayDrmOperation || (exports.AVPlayDrmOperation = {}));
+var AVPlayStreamType;
+(function (AVPlayStreamType) {
+    AVPlayStreamType["VIDEO"] = "VIDEO";
+    AVPlayStreamType["AUDIO"] = "AUDIO";
+    AVPlayStreamType["TEXT"] = "TEXT";
+})(AVPlayStreamType = exports.AVPlayStreamType || (exports.AVPlayStreamType = {}));
+var AVPlayError;
+(function (AVPlayError) {
+    AVPlayError["PLAYER_ERROR_NONE"] = "PLAYER_ERROR_NONE";
+    AVPlayError["PLAYER_ERROR_INVALID_PARAMETER"] = "PLAYER_ERROR_INVALID_PARAMETER";
+    AVPlayError["PLAYER_ERROR_NO_SUCH_FILE"] = "PLAYER_ERROR_NO_SUCH_FILE";
+    AVPlayError["PLAYER_ERROR_INVALID_OPERATION"] = "PLAYER_ERROR_INVALID_OPERATION";
+    AVPlayError["PLAYER_ERROR_SEEK_FAILED"] = "PLAYER_ERROR_SEEK_FAILED";
+    AVPlayError["PLAYER_ERROR_INVALID_STATE"] = "PLAYER_ERROR_INVALID_STATE";
+    AVPlayError["PLAYER_ERROR_NOT_SUPPORTED_FILE"] = "PLAYER_ERROR_NOT_SUPPORTED_FILE";
+    AVPlayError["PLAYER_ERROR_NOT_SUPPORTED_FORMAT"] = "PLAYER_ERROR_NOT_SUPPORTED_FORMAT";
+    AVPlayError["PLAYER_ERROR_INVALID_URI"] = "PLAYER_ERROR_INVALID_URI";
+    AVPlayError["PLAYER_ERROR_CONNECTION_FAILED"] = "PLAYER_ERROR_CONNECTION_FAILED";
+    AVPlayError["PLAYER_ERROR_GENEREIC"] = "PLAYER_ERROR_GENEREIC";
+})(AVPlayError = exports.AVPlayError || (exports.AVPlayError = {}));
+var AVPlayEvent;
+(function (AVPlayEvent) {
+    AVPlayEvent["PLAYER_MSG_NONE"] = "PLAYER_MSG_NONE";
+    AVPlayEvent["PLAYER_MSG_RESOLUTION_CHANGED"] = "PLAYER_MSG_RESOLUTION_CHANGED";
+    AVPlayEvent["PLAYER_MSG_BITRATE_CHANGE"] = "PLAYER_MSG_BITRATE_CHANGE";
+    AVPlayEvent["PLAYER_MSG_FRAGMENT_INFO"] = "PLAYER_MSG_FRAGMENT_INFO";
+    AVPlayEvent["PLAYER_SPARSE_TRACK_DETECT"] = "PLAYER_SPARSE_TRACK_DETECT";
+    AVPlayEvent["PLAYER_STREAMING_EVENT"] = "PLAYER_STREAMING_EVENT";
+    AVPlayEvent["PLAYER_MSG_HTTP_ERROR_CODE"] = "PLAYER_MSG_HTTP_ERROR_CODE";
+    AVPlayEvent["PLAYER_MSG_DRM_CHALLENGE_DATA"] = "PLAYER_MSG_DRM_CHALLENGE_DATA";
+})(AVPlayEvent = exports.AVPlayEvent || (exports.AVPlayEvent = {}));
+
+
+/***/ }),
+
+/***/ "./src/avplaystore.ts":
+/*!****************************!*\
+  !*** ./src/avplaystore.ts ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getPlayer = void 0;
+const { avplaystore } = window.webapis;
+exports.getPlayer = avplaystore.getPlayer;
+
+
+/***/ }),
+
+/***/ "./src/billing.ts":
+/*!************************!*\
+  !*** ./src/billing.ts ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TVServerType = exports.isServiceAvailable = exports.cancelSubscription = exports.getUserPurchaseList = exports.getServiceCountryAvailability = exports.verifyInvoice = exports.applyInvoice = exports.getProductsList = exports.buyItem = exports.getVersion = void 0;
+const { billing } = window.webapis;
+exports.getVersion = billing.getVersion, exports.buyItem = billing.buyItem, exports.getProductsList = billing.getProductsList, exports.applyInvoice = billing.applyInvoice, exports.verifyInvoice = billing.verifyInvoice, exports.getServiceCountryAvailability = billing.getServiceCountryAvailability, exports.getUserPurchaseList = billing.getUserPurchaseList, exports.cancelSubscription = billing.cancelSubscription, exports.isServiceAvailable = billing.isServiceAvailable;
+var TVServerType;
+(function (TVServerType) {
+    TVServerType["DEV"] = "DEV";
+    TVServerType["PRD"] = "PRD";
+})(TVServerType = exports.TVServerType || (exports.TVServerType = {}));
+
+
+/***/ }),
+
+/***/ "./src/index.ts":
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.WebAPIException = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = exports.webapis = void 0;
+const webapis = __importStar(__webpack_require__(/*! ./webapis */ "./src/webapis.ts"));
+exports.webapis = webapis;
+const adinfo = __importStar(__webpack_require__(/*! ./adinfo */ "./src/adinfo.ts"));
+exports.adinfo = adinfo;
+const appcommon = __importStar(__webpack_require__(/*! ./appcommon */ "./src/appcommon.ts"));
+exports.appcommon = appcommon;
+const avinfo = __importStar(__webpack_require__(/*! ./avinfo */ "./src/avinfo.ts"));
+exports.avinfo = avinfo;
+const avplay = __importStar(__webpack_require__(/*! ./avplay */ "./src/avplay.ts"));
+exports.avplay = avplay;
+const avplaystore = __importStar(__webpack_require__(/*! ./avplaystore */ "./src/avplaystore.ts"));
+exports.avplaystore = avplaystore;
+const billing = __importStar(__webpack_require__(/*! ./billing */ "./src/billing.ts"));
+exports.billing = billing;
+const network = __importStar(__webpack_require__(/*! ./network */ "./src/network.ts"));
+exports.network = network;
+const productinfo = __importStar(__webpack_require__(/*! ./productinfo */ "./src/productinfo.ts"));
+exports.productinfo = productinfo;
+const sso = __importStar(__webpack_require__(/*! ./sso */ "./src/sso.ts"));
+exports.sso = sso;
+const tvinfo = __importStar(__webpack_require__(/*! ./tvinfo */ "./src/tvinfo.ts"));
+exports.tvinfo = tvinfo;
+const widgetdata = __importStar(__webpack_require__(/*! ./widgetdata */ "./src/widgetdata.ts"));
+exports.widgetdata = widgetdata;
+const WebAPIException = __importStar(__webpack_require__(/*! ./webapiexception */ "./src/webapiexception.ts"));
+exports.WebAPIException = WebAPIException;
+
+
+/***/ }),
+
+/***/ "./src/network.ts":
+/*!************************!*\
+  !*** ./src/network.ts ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.NetworkWiFiEncryptionType = exports.NetworkWiFiSecurityMode = exports.NetworkState = exports.NetworkActiveConnectionType = exports.NetworkIpMode = exports.checkCurrentIpWith60Field = exports.getCurrentDhcpOption60Field = exports.removeDhcpOption60Field = exports.setDhcpOption60Field = exports.getSecondaryDns = exports.getWiFiEncryptionType = exports.getWiFiSecurityMode = exports.getWiFiSignalStrengthLevel = exports.getWiFiSsid = exports.removeNetworkStateChangeListener = exports.addNetworkStateChangeListener = exports.getActiveConnectionType = exports.getTVName = exports.getIp = exports.getDns = exports.getMac = exports.getGateway = exports.getSubnetMask = exports.getIpMode = exports.isConnectedToGateway = exports.getVersion = void 0;
+const { network } = window.webapis;
+exports.getVersion = network.getVersion, exports.isConnectedToGateway = network.isConnectedToGateway, exports.getIpMode = network.getIpMode, exports.getSubnetMask = network.getSubnetMask, exports.getGateway = network.getGateway, exports.getMac = network.getMac, exports.getDns = network.getDns, exports.getIp = network.getIp, exports.getTVName = network.getTVName, exports.getActiveConnectionType = network.getActiveConnectionType, exports.addNetworkStateChangeListener = network.addNetworkStateChangeListener, exports.removeNetworkStateChangeListener = network.removeNetworkStateChangeListener, exports.getWiFiSsid = network.getWiFiSsid, exports.getWiFiSignalStrengthLevel = network.getWiFiSignalStrengthLevel, exports.getWiFiSecurityMode = network.getWiFiSecurityMode, exports.getWiFiEncryptionType = network.getWiFiEncryptionType, exports.getSecondaryDns = network.getSecondaryDns, exports.setDhcpOption60Field = network.setDhcpOption60Field, exports.removeDhcpOption60Field = network.removeDhcpOption60Field, exports.getCurrentDhcpOption60Field = network.getCurrentDhcpOption60Field, exports.checkCurrentIpWith60Field = network.checkCurrentIpWith60Field, exports.NetworkIpMode = network.NetworkIpMode, exports.NetworkActiveConnectionType = network.NetworkActiveConnectionType, exports.NetworkState = network.NetworkState, exports.NetworkWiFiSecurityMode = network.NetworkWiFiSecurityMode, exports.NetworkWiFiEncryptionType = network.NetworkWiFiEncryptionType;
+
+
+/***/ }),
+
+/***/ "./src/productinfo.ts":
+/*!****************************!*\
+  !*** ./src/productinfo.ts ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isDisplayRotatorSupported = exports.isUHDAModel = exports.removeSystemConfigChangeListener = exports.addSystemConfigChangeListener = exports.setSystemConfig = exports.getSystemConfig = exports.getLocalSet = exports.getNoGlass3dSupport = exports.isWallModel = exports.getRealModel = exports.is8KPanelSupported = exports.isUdPanelSupported = exports.isTtvSupported = exports.isSoccerModeEnabled = exports.getTunerEpop = exports.getSmartTVServerVersion = exports.getSmartTVServerType = exports.getModel = exports.getModelCode = exports.getDuid = exports.getFirmware = exports.getVersion = exports.ProductInfoSiServerType = exports.ProductInfoNoGlass3dSupport = exports.ProductInfoConfigKey = void 0;
+const { productinfo } = window.webapis;
+exports.ProductInfoConfigKey = productinfo.ProductInfoConfigKey, exports.ProductInfoNoGlass3dSupport = productinfo.ProductInfoNoGlass3dSupport, exports.ProductInfoSiServerType = productinfo.ProductInfoSiServerType, exports.getVersion = productinfo.getVersion, exports.getFirmware = productinfo.getFirmware, exports.getDuid = productinfo.getDuid, exports.getModelCode = productinfo.getModelCode, exports.getModel = productinfo.getModel, exports.getSmartTVServerType = productinfo.getSmartTVServerType, exports.getSmartTVServerVersion = productinfo.getSmartTVServerVersion, exports.getTunerEpop = productinfo.getTunerEpop, exports.isSoccerModeEnabled = productinfo.isSoccerModeEnabled, exports.isTtvSupported = productinfo.isTtvSupported, exports.isUdPanelSupported = productinfo.isUdPanelSupported, exports.is8KPanelSupported = productinfo.is8KPanelSupported, exports.getRealModel = productinfo.getRealModel, exports.isWallModel = productinfo.isWallModel, exports.getNoGlass3dSupport = productinfo.getNoGlass3dSupport, exports.getLocalSet = productinfo.getLocalSet, exports.getSystemConfig = productinfo.getSystemConfig, exports.setSystemConfig = productinfo.setSystemConfig, exports.addSystemConfigChangeListener = productinfo.addSystemConfigChangeListener, exports.removeSystemConfigChangeListener = productinfo.removeSystemConfigChangeListener, exports.isUHDAModel = productinfo.isUHDAModel, exports.isDisplayRotatorSupported = productinfo.isDisplayRotatorSupported;
+
+
+/***/ }),
+
+/***/ "./src/sso.ts":
+/*!********************!*\
+  !*** ./src/sso.ts ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SsoLoginState = exports.showCreateAccountView = exports.getLoginStatus = exports.getLoginUid = exports.getGuid = exports.showAccountView = exports.getVersion = void 0;
+const { sso } = window.webapis;
+exports.getVersion = sso.getVersion, exports.showAccountView = sso.showAccountView, exports.getGuid = sso.getGuid, exports.getLoginUid = sso.getLoginUid, exports.getLoginStatus = sso.getLoginStatus, exports.showCreateAccountView = sso.showCreateAccountView;
+var SsoLoginState;
+(function (SsoLoginState) {
+    /**
+     * Not logged in
+     */
+    SsoLoginState[SsoLoginState["SSO_NOT_LOGIN"] = 0] = "SSO_NOT_LOGIN";
+    /**
+     * Logged in
+     */
+    SsoLoginState[SsoLoginState["SSO_LOGIN"] = 1] = "SSO_LOGIN";
+})(SsoLoginState = exports.SsoLoginState || (exports.SsoLoginState = {}));
+
+
+/***/ }),
+
+/***/ "./src/tvinfo.ts":
+/*!***********************!*\
+  !*** ./src/tvinfo.ts ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TvInfoValue = exports.TvInfoKey = exports.TvInfoMenuValue = exports.TvInfoMenuKey = exports.registerInAppCaptionControl = exports.showCaption = exports.getTvInfoValue = exports.isTvsPicSizeResized = exports.removeCaptionChangeListener = exports.addCaptionChangeListener = exports.getMenuValue = exports.getVersion = void 0;
+const { tvinfo } = window.webapis;
+exports.getVersion = tvinfo.getVersion, exports.getMenuValue = tvinfo.getMenuValue, exports.addCaptionChangeListener = tvinfo.addCaptionChangeListener, exports.removeCaptionChangeListener = tvinfo.removeCaptionChangeListener, exports.isTvsPicSizeResized = tvinfo.isTvsPicSizeResized, exports.getTvInfoValue = tvinfo.getTvInfoValue, exports.showCaption = tvinfo.showCaption, exports.registerInAppCaptionControl = tvinfo.registerInAppCaptionControl, exports.TvInfoMenuKey = tvinfo.TvInfoMenuKey, exports.TvInfoMenuValue = tvinfo.TvInfoMenuValue, exports.TvInfoKey = tvinfo.TvInfoKey, exports.TvInfoValue = tvinfo.TvInfoValue;
+
+
+/***/ }),
+
+/***/ "./src/webapiexception.ts":
+/*!********************************!*\
+  !*** ./src/webapiexception.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UNKNOWN_ERR = exports.SERVICE_NOT_AVAILABLE_ERR = exports.IO_ERR = exports.INVALID_VALUES_ERR = exports.DATA_CLONE_ERR = exports.INVALID_NODE_TYPE_ERR = exports.TIMEOUT_ERR = exports.QUOTA_EXCEEDED_ERR = exports.URL_MISMATCH_ERR = exports.ABORT_ERR = exports.NETWORK_ERR = exports.SECURITY_ERR = exports.TYPE_MISMATCH_ERR = exports.VALIDATION_ERR = exports.INVALID_ACCESS_ERR = exports.NAMESPACE_ERR = exports.INVALID_MODIFICATION_ERR = exports.SYNTAX_ERR = exports.INVALID_STATE_ERR = exports.INUSE_ATTRIBUTE_ERR = exports.NOT_SUPPORTED_ERR = exports.NOT_FOUND_ERR = exports.NO_MODIFICATION_ALLOWED_ERR = exports.NO_DATA_ALLOWED_ERR = exports.INVALID_CHARACTER_ERR = exports.WRONG_DOCUMENT_ERR = exports.HIERARCHY_REQUEST_ERR = exports.DOMSTRING_SIZE_ERR = exports.INDEX_SIZE_ERR = void 0;
+const { WebAPIException } = window.webapis;
+exports.INDEX_SIZE_ERR = WebAPIException.INDEX_SIZE_ERR, exports.DOMSTRING_SIZE_ERR = WebAPIException.DOMSTRING_SIZE_ERR, exports.HIERARCHY_REQUEST_ERR = WebAPIException.HIERARCHY_REQUEST_ERR, exports.WRONG_DOCUMENT_ERR = WebAPIException.WRONG_DOCUMENT_ERR, exports.INVALID_CHARACTER_ERR = WebAPIException.INVALID_CHARACTER_ERR, exports.NO_DATA_ALLOWED_ERR = WebAPIException.NO_DATA_ALLOWED_ERR, exports.NO_MODIFICATION_ALLOWED_ERR = WebAPIException.NO_MODIFICATION_ALLOWED_ERR, exports.NOT_FOUND_ERR = WebAPIException.NOT_FOUND_ERR, exports.NOT_SUPPORTED_ERR = WebAPIException.NOT_SUPPORTED_ERR, exports.INUSE_ATTRIBUTE_ERR = WebAPIException.INUSE_ATTRIBUTE_ERR, exports.INVALID_STATE_ERR = WebAPIException.INVALID_STATE_ERR, exports.SYNTAX_ERR = WebAPIException.SYNTAX_ERR, exports.INVALID_MODIFICATION_ERR = WebAPIException.INVALID_MODIFICATION_ERR, exports.NAMESPACE_ERR = WebAPIException.NAMESPACE_ERR, exports.INVALID_ACCESS_ERR = WebAPIException.INVALID_ACCESS_ERR, exports.VALIDATION_ERR = WebAPIException.VALIDATION_ERR, exports.TYPE_MISMATCH_ERR = WebAPIException.TYPE_MISMATCH_ERR, exports.SECURITY_ERR = WebAPIException.SECURITY_ERR, exports.NETWORK_ERR = WebAPIException.NETWORK_ERR, exports.ABORT_ERR = WebAPIException.ABORT_ERR, exports.URL_MISMATCH_ERR = WebAPIException.URL_MISMATCH_ERR, exports.QUOTA_EXCEEDED_ERR = WebAPIException.QUOTA_EXCEEDED_ERR, exports.TIMEOUT_ERR = WebAPIException.TIMEOUT_ERR, exports.INVALID_NODE_TYPE_ERR = WebAPIException.INVALID_NODE_TYPE_ERR, exports.DATA_CLONE_ERR = WebAPIException.DATA_CLONE_ERR, exports.INVALID_VALUES_ERR = WebAPIException.INVALID_VALUES_ERR, exports.IO_ERR = WebAPIException.IO_ERR, exports.SERVICE_NOT_AVAILABLE_ERR = WebAPIException.SERVICE_NOT_AVAILABLE_ERR, exports.UNKNOWN_ERR = WebAPIException.UNKNOWN_ERR;
+
+
+/***/ }),
+
+/***/ "./src/webapis.ts":
+/*!************************!*\
+  !*** ./src/webapis.ts ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.WebAPIException = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = void 0;
+const adinfo = __importStar(__webpack_require__(/*! ./adinfo */ "./src/adinfo.ts"));
+exports.adinfo = adinfo;
+const appcommon = __importStar(__webpack_require__(/*! ./appcommon */ "./src/appcommon.ts"));
+exports.appcommon = appcommon;
+const avinfo = __importStar(__webpack_require__(/*! ./avinfo */ "./src/avinfo.ts"));
+exports.avinfo = avinfo;
+const avplay = __importStar(__webpack_require__(/*! ./avplay */ "./src/avplay.ts"));
+exports.avplay = avplay;
+const avplaystore = __importStar(__webpack_require__(/*! ./avplaystore */ "./src/avplaystore.ts"));
+exports.avplaystore = avplaystore;
+const billing = __importStar(__webpack_require__(/*! ./billing */ "./src/billing.ts"));
+exports.billing = billing;
+const network = __importStar(__webpack_require__(/*! ./network */ "./src/network.ts"));
+exports.network = network;
+const productinfo = __importStar(__webpack_require__(/*! ./productinfo */ "./src/productinfo.ts"));
+exports.productinfo = productinfo;
+const sso = __importStar(__webpack_require__(/*! ./sso */ "./src/sso.ts"));
+exports.sso = sso;
+const tvinfo = __importStar(__webpack_require__(/*! ./tvinfo */ "./src/tvinfo.ts"));
+exports.tvinfo = tvinfo;
+const widgetdata = __importStar(__webpack_require__(/*! ./widgetdata */ "./src/widgetdata.ts"));
+exports.widgetdata = widgetdata;
+const WebAPIException = __importStar(__webpack_require__(/*! ./webapiexception */ "./src/webapiexception.ts"));
+exports.WebAPIException = WebAPIException;
+
+
+/***/ }),
+
+/***/ "./src/widgetdata.ts":
+/*!***************************!*\
+  !*** ./src/widgetdata.ts ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.remove = exports.write = exports.read = exports.getVersion = void 0;
+const { widgetdata } = window.webapis;
+exports.getVersion = widgetdata.getVersion, exports.read = widgetdata.read, exports.write = widgetdata.write, exports.remove = widgetdata.remove;
+
+
+/***/ }),
+
+/***/ 0:
+/*!****************************!*\
+  !*** multi ./src/index.ts ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/index.ts */"./src/index.ts");
+
+
+/***/ })
+
+/******/ })));

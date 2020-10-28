@@ -1,1 +1,118 @@
-!function(R,E){for(var _ in E)R[_]=E[_]}(this,function(R){var E={};function _(I){if(E[I])return E[I].exports;var A=E[I]={i:I,l:!1,exports:{}};return R[I].call(A.exports,A,A.exports,_),A.l=!0,A.exports}return _.m=R,_.c=E,_.d=function(R,E,I){_.o(R,E)||Object.defineProperty(R,E,{enumerable:!0,get:I})},_.r=function(R){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(R,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(R,"__esModule",{value:!0})},_.t=function(R,E){if(1&E&&(R=_(R)),8&E)return R;if(4&E&&"object"==typeof R&&R&&R.__esModule)return R;var I=Object.create(null);if(_.r(I),Object.defineProperty(I,"default",{enumerable:!0,value:R}),2&E&&"string"!=typeof R)for(var A in R)_.d(I,A,function(E){return R[E]}.bind(null,A));return I},_.n=function(R){var E=R&&R.__esModule?function(){return R.default}:function(){return R};return _.d(E,"a",E),E},_.o=function(R,E){return Object.prototype.hasOwnProperty.call(R,E)},_.p="",_(_.s=25)}({11:function(R,E,_){"use strict";Object.defineProperty(E,"__esModule",{value:!0}),E.UNKNOWN_ERR=E.SERVICE_NOT_AVAILABLE_ERR=E.IO_ERR=E.INVALID_VALUES_ERR=E.DATA_CLONE_ERR=E.INVALID_NODE_TYPE_ERR=E.TIMEOUT_ERR=E.QUOTA_EXCEEDED_ERR=E.URL_MISMATCH_ERR=E.ABORT_ERR=E.NETWORK_ERR=E.SECURITY_ERR=E.TYPE_MISMATCH_ERR=E.VALIDATION_ERR=E.INVALID_ACCESS_ERR=E.NAMESPACE_ERR=E.INVALID_MODIFICATION_ERR=E.SYNTAX_ERR=E.INVALID_STATE_ERR=E.INUSE_ATTRIBUTE_ERR=E.NOT_SUPPORTED_ERR=E.NOT_FOUND_ERR=E.NO_MODIFICATION_ALLOWED_ERR=E.NO_DATA_ALLOWED_ERR=E.INVALID_CHARACTER_ERR=E.WRONG_DOCUMENT_ERR=E.HIERARCHY_REQUEST_ERR=E.DOMSTRING_SIZE_ERR=E.INDEX_SIZE_ERR=void 0;const{WebAPIException:I}=window.webapis;E.INDEX_SIZE_ERR=I.INDEX_SIZE_ERR,E.DOMSTRING_SIZE_ERR=I.DOMSTRING_SIZE_ERR,E.HIERARCHY_REQUEST_ERR=I.HIERARCHY_REQUEST_ERR,E.WRONG_DOCUMENT_ERR=I.WRONG_DOCUMENT_ERR,E.INVALID_CHARACTER_ERR=I.INVALID_CHARACTER_ERR,E.NO_DATA_ALLOWED_ERR=I.NO_DATA_ALLOWED_ERR,E.NO_MODIFICATION_ALLOWED_ERR=I.NO_MODIFICATION_ALLOWED_ERR,E.NOT_FOUND_ERR=I.NOT_FOUND_ERR,E.NOT_SUPPORTED_ERR=I.NOT_SUPPORTED_ERR,E.INUSE_ATTRIBUTE_ERR=I.INUSE_ATTRIBUTE_ERR,E.INVALID_STATE_ERR=I.INVALID_STATE_ERR,E.SYNTAX_ERR=I.SYNTAX_ERR,E.INVALID_MODIFICATION_ERR=I.INVALID_MODIFICATION_ERR,E.NAMESPACE_ERR=I.NAMESPACE_ERR,E.INVALID_ACCESS_ERR=I.INVALID_ACCESS_ERR,E.VALIDATION_ERR=I.VALIDATION_ERR,E.TYPE_MISMATCH_ERR=I.TYPE_MISMATCH_ERR,E.SECURITY_ERR=I.SECURITY_ERR,E.NETWORK_ERR=I.NETWORK_ERR,E.ABORT_ERR=I.ABORT_ERR,E.URL_MISMATCH_ERR=I.URL_MISMATCH_ERR,E.QUOTA_EXCEEDED_ERR=I.QUOTA_EXCEEDED_ERR,E.TIMEOUT_ERR=I.TIMEOUT_ERR,E.INVALID_NODE_TYPE_ERR=I.INVALID_NODE_TYPE_ERR,E.DATA_CLONE_ERR=I.DATA_CLONE_ERR,E.INVALID_VALUES_ERR=I.INVALID_VALUES_ERR,E.IO_ERR=I.IO_ERR,E.SERVICE_NOT_AVAILABLE_ERR=I.SERVICE_NOT_AVAILABLE_ERR,E.UNKNOWN_ERR=I.UNKNOWN_ERR},25:function(R,E,_){R.exports=_(11)}}));
+(function(e, a) { for(var i in a) e[i] = a[i]; }(this, /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/webapiexception.ts":
+/*!********************************!*\
+  !*** ./src/webapiexception.ts ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UNKNOWN_ERR = exports.SERVICE_NOT_AVAILABLE_ERR = exports.IO_ERR = exports.INVALID_VALUES_ERR = exports.DATA_CLONE_ERR = exports.INVALID_NODE_TYPE_ERR = exports.TIMEOUT_ERR = exports.QUOTA_EXCEEDED_ERR = exports.URL_MISMATCH_ERR = exports.ABORT_ERR = exports.NETWORK_ERR = exports.SECURITY_ERR = exports.TYPE_MISMATCH_ERR = exports.VALIDATION_ERR = exports.INVALID_ACCESS_ERR = exports.NAMESPACE_ERR = exports.INVALID_MODIFICATION_ERR = exports.SYNTAX_ERR = exports.INVALID_STATE_ERR = exports.INUSE_ATTRIBUTE_ERR = exports.NOT_SUPPORTED_ERR = exports.NOT_FOUND_ERR = exports.NO_MODIFICATION_ALLOWED_ERR = exports.NO_DATA_ALLOWED_ERR = exports.INVALID_CHARACTER_ERR = exports.WRONG_DOCUMENT_ERR = exports.HIERARCHY_REQUEST_ERR = exports.DOMSTRING_SIZE_ERR = exports.INDEX_SIZE_ERR = void 0;
+const { WebAPIException } = window.webapis;
+exports.INDEX_SIZE_ERR = WebAPIException.INDEX_SIZE_ERR, exports.DOMSTRING_SIZE_ERR = WebAPIException.DOMSTRING_SIZE_ERR, exports.HIERARCHY_REQUEST_ERR = WebAPIException.HIERARCHY_REQUEST_ERR, exports.WRONG_DOCUMENT_ERR = WebAPIException.WRONG_DOCUMENT_ERR, exports.INVALID_CHARACTER_ERR = WebAPIException.INVALID_CHARACTER_ERR, exports.NO_DATA_ALLOWED_ERR = WebAPIException.NO_DATA_ALLOWED_ERR, exports.NO_MODIFICATION_ALLOWED_ERR = WebAPIException.NO_MODIFICATION_ALLOWED_ERR, exports.NOT_FOUND_ERR = WebAPIException.NOT_FOUND_ERR, exports.NOT_SUPPORTED_ERR = WebAPIException.NOT_SUPPORTED_ERR, exports.INUSE_ATTRIBUTE_ERR = WebAPIException.INUSE_ATTRIBUTE_ERR, exports.INVALID_STATE_ERR = WebAPIException.INVALID_STATE_ERR, exports.SYNTAX_ERR = WebAPIException.SYNTAX_ERR, exports.INVALID_MODIFICATION_ERR = WebAPIException.INVALID_MODIFICATION_ERR, exports.NAMESPACE_ERR = WebAPIException.NAMESPACE_ERR, exports.INVALID_ACCESS_ERR = WebAPIException.INVALID_ACCESS_ERR, exports.VALIDATION_ERR = WebAPIException.VALIDATION_ERR, exports.TYPE_MISMATCH_ERR = WebAPIException.TYPE_MISMATCH_ERR, exports.SECURITY_ERR = WebAPIException.SECURITY_ERR, exports.NETWORK_ERR = WebAPIException.NETWORK_ERR, exports.ABORT_ERR = WebAPIException.ABORT_ERR, exports.URL_MISMATCH_ERR = WebAPIException.URL_MISMATCH_ERR, exports.QUOTA_EXCEEDED_ERR = WebAPIException.QUOTA_EXCEEDED_ERR, exports.TIMEOUT_ERR = WebAPIException.TIMEOUT_ERR, exports.INVALID_NODE_TYPE_ERR = WebAPIException.INVALID_NODE_TYPE_ERR, exports.DATA_CLONE_ERR = WebAPIException.DATA_CLONE_ERR, exports.INVALID_VALUES_ERR = WebAPIException.INVALID_VALUES_ERR, exports.IO_ERR = WebAPIException.IO_ERR, exports.SERVICE_NOT_AVAILABLE_ERR = WebAPIException.SERVICE_NOT_AVAILABLE_ERR, exports.UNKNOWN_ERR = WebAPIException.UNKNOWN_ERR;
+
+
+/***/ }),
+
+/***/ 11:
+/*!**************************************!*\
+  !*** multi ./src/webapiexception.ts ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/webapiexception.ts */"./src/webapiexception.ts");
+
+
+/***/ })
+
+/******/ })));
