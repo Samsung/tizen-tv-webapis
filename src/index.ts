@@ -126,5 +126,6 @@ export const {
     sso,
     tvinfo,
     widgetdata,
+    systeminfo,
     WebAPIException
 } = window.webapis;

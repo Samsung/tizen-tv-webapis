@@ -97,7 +97,7 @@
 
 var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WebAPIException = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = exports.webapis = exports.SsoLoginState = exports.TVServerType = exports.AVPlayEvent = exports.AVPlayError = exports.AVPlayStreamType = exports.AVPlayDrmOperation = exports.AVPlayDrmType = exports.AVPlayStreamingPropertyType = exports.AVPlayBufferSizeUnit = exports.AVPlayBufferOption = exports.AVPlayDisplayMode = exports.AVPlayPlayerState = exports.AppCommonScreenSaverState = void 0;
+exports.WebAPIException = exports.systeminfo = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = exports.webapis = exports.SsoLoginState = exports.TVServerType = exports.AVPlayEvent = exports.AVPlayError = exports.AVPlayStreamType = exports.AVPlayDrmOperation = exports.AVPlayDrmType = exports.AVPlayStreamingPropertyType = exports.AVPlayBufferSizeUnit = exports.AVPlayBufferOption = exports.AVPlayDisplayMode = exports.AVPlayPlayerState = exports.AppCommonScreenSaverState = void 0;
 var AppCommonScreenSaverState;
 (function (AppCommonScreenSaverState) {
     /**
@@ -221,7 +221,7 @@ var SsoLoginState;
      */
     SsoLoginState[SsoLoginState["SSO_LOGIN"] = 1] = "SSO_LOGIN";
 })(SsoLoginState = exports.SsoLoginState || (exports.SsoLoginState = {}));
-_a = window.webapis, exports.webapis = _a.webapis, exports.adinfo = _a.adinfo, exports.appcommon = _a.appcommon, exports.avinfo = _a.avinfo, exports.avplay = _a.avplay, exports.avplaystore = _a.avplaystore, exports.billing = _a.billing, exports.network = _a.network, exports.productinfo = _a.productinfo, exports.sso = _a.sso, exports.tvinfo = _a.tvinfo, exports.widgetdata = _a.widgetdata, exports.WebAPIException = _a.WebAPIException;
+_a = window.webapis, exports.webapis = _a.webapis, exports.adinfo = _a.adinfo, exports.appcommon = _a.appcommon, exports.avinfo = _a.avinfo, exports.avplay = _a.avplay, exports.avplaystore = _a.avplaystore, exports.billing = _a.billing, exports.network = _a.network, exports.productinfo = _a.productinfo, exports.sso = _a.sso, exports.tvinfo = _a.tvinfo, exports.widgetdata = _a.widgetdata, exports.systeminfo = _a.systeminfo, exports.WebAPIException = _a.WebAPIException;
 
 
 /***/ }),
