@@ -60,6 +60,22 @@ const { getVersion, getDolbyDigitalCompMode, isHdrTvSupport } = avinfo;
 getVersion();
 ```
 
+```ts
+// ts
+import { systeminfo } from 'tizen-tv-webapis';
+const { isSupportedAudioCodec } = systeminfo;
+
+isSupportedAudioCodec('WMA');
+```
+
+```ts
+// ts
+import { productinfo } from 'tizen-tv-webapis';
+const { getModelCode } = productinfo;
+
+getModelCode();
+```
+
 ## Samples
 
 We offer two samples for common js and typescript.
