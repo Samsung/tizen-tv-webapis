@@ -1,6 +1,6 @@
 {
     "name": "sample-typescript",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "",
     "private": true,
     "scripts": {
@@ -31,7 +31,7 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "tizen-tv-webapis": "../..",
-        "@types/tizen-tv-webapis": "file:../../../types-tizen-tv-webapis"
+        "tizen-tv-webapis": "latest",
+        "@types/tizen-tv-webapis": "latest"
     }
 }
