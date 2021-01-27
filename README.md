@@ -80,7 +80,7 @@ setScreenSaver(AppCommonScreenSaverState.SCREEN_SAVER_ON);
 Modules have been integrated in index.d.ts. Enums can be simply imported from the 'tizen-tv-webapis'.
 
 ```ts
-import { AppCommonScreenSaverState } from 'tizen-tv-webapis';
+import { appcommon, AppCommonScreenSaverState } from 'tizen-tv-webapis';
 const { setScreenSaver } = appcommon;
 
 setScreenSaver(AppCommonScreenSaverState.SCREEN_SAVER_ON);
