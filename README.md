@@ -60,6 +60,32 @@ const { getVersion, getDolbyDigitalCompMode, isHdrTvSupport } = avinfo;
 getVersion();
 ```
 
+## Enum usage
+
+### v1.0.0
+
+Modules were separated. Enums must have been imported from the each modules.
+
+```ts
+import {
+    setScreenSaver,
+    AppCommonScreenSaverState
+} from 'tizen-tv-webapis/appcommon';
+
+setScreenSaver(AppCommonScreenSaverState.SCREEN_SAVER_ON);
+```
+
+### v2.0.0
+
+Modules have been integrated in index.d.ts. Enums can be simply imported from the 'tizen-tv-webapis'.
+
+```ts
+import { appcommon, AppCommonScreenSaverState } from 'tizen-tv-webapis';
+const { setScreenSaver } = appcommon;
+
+setScreenSaver(AppCommonScreenSaverState.SCREEN_SAVER_ON);
+```
+
 ## Samples
 
 We offer two samples for common js and typescript.
@@ -83,3 +109,7 @@ We offer two samples for common js and typescript.
 2. npm install
 3. npm run wits-init (To use WITs **Live reload feature**)
 4. npm run start
+
+```
+
+```

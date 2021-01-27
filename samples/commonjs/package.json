@@ -1,6 +1,6 @@
 {
     "name": "sample-commonjs",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "",
     "private": true,
     "scripts": {
@@ -30,6 +30,6 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "tizen-tv-webapis": "../.."
+        "tizen-tv-webapis": "latest"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "sample-typescript",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "",
     "private": true,
     "scripts": {
@@ -12,9 +12,9 @@
         "checkSerial": "sdb devices",
         "build": "tizen build-web --exclude node_modules/* -- ./",
         "pkg": "tizen package --type wgt -- .buildResult/ --output ./ --sign ",
-        "install-pkg": "tizen install --name TsTizenWebApp.wgt -- ./ --serial %SERIAL%",
-        "uninstall": "tizen uninstall --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%",
-        "launch": "tizen run --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%"
+        "install-pkg": "tizen install --name SampleTypescript.wgt -- ./ --serial %SERIAL%",
+        "uninstall": "tizen uninstall --pkgid tE56cTDSwO.SampleTypescript --serial %SERIAL%",
+        "launch": "tizen run --pkgid tE56cTDSwO.SampleTypescript --serial %SERIAL%"
     },
     "keywords": [],
     "author": "",
@@ -31,7 +31,7 @@
         "webpack-cli": "^3.3.11"
     },
     "dependencies": {
-        "tizen-tv-webapis": "../..",
-        "@types/tizen-tv-webapis": "file:../../../types-tizen-tv-webapis"
+        "tizen-tv-webapis": "latest",
+        "@types/tizen-tv-webapis": "latest"
     }
 }

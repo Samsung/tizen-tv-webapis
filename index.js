@@ -86,220 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/adinfo.ts":
-/*!***********************!*\
-  !*** ./src/adinfo.ts ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppCommonScreenSaverState = exports.getTIFA = exports.isLATEnabled = exports.getVersion = void 0;
-const { adinfo } = window.webapis;
-exports.getVersion = adinfo.getVersion, exports.isLATEnabled = adinfo.isLATEnabled, exports.getTIFA = adinfo.getTIFA;
-var AppCommonScreenSaverState;
-(function (AppCommonScreenSaverState) {
-    /**
-     * Screensaver off
-     * @since 2.3
-     */
-    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_OFF"] = 0] = "SCREEN_SAVER_OFF";
-    /**
-     * Screensaver on
-     * @since 2.3
-     */
-    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_ON"] = 1] = "SCREEN_SAVER_ON";
-})(AppCommonScreenSaverState = exports.AppCommonScreenSaverState || (exports.AppCommonScreenSaverState = {}));
-
-
-/***/ }),
-
-/***/ "./src/appcommon.ts":
-/*!**************************!*\
-  !*** ./src/appcommon.ts ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AppCommonScreenSaverState = exports.setScreenSaver = exports.getVersion = void 0;
-const { appcommon } = window.webapis;
-exports.getVersion = appcommon.getVersion, exports.setScreenSaver = appcommon.setScreenSaver, exports.AppCommonScreenSaverState = appcommon.AppCommonScreenSaverState;
-
-
-/***/ }),
-
-/***/ "./src/avinfo.ts":
-/*!***********************!*\
-  !*** ./src/avinfo.ts ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isHdrTvSupport = exports.getDolbyDigitalCompMode = exports.getVersion = exports.AvInfoDigitalCompMode = void 0;
-const { avinfo } = window.webapis;
-exports.AvInfoDigitalCompMode = avinfo.AvInfoDigitalCompMode, exports.getVersion = avinfo.getVersion, exports.getDolbyDigitalCompMode = avinfo.getDolbyDigitalCompMode, exports.isHdrTvSupport = avinfo.isHdrTvSupport;
-
-
-/***/ }),
-
-/***/ "./src/avplay.ts":
-/*!***********************!*\
-  !*** ./src/avplay.ts ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.AVPlayEvent = exports.AVPlayError = exports.AVPlayStreamType = exports.AVPlayDrmOperation = exports.AVPlayDrmType = exports.AVPlayStreamingPropertyType = exports.AVPlayBufferSizeUnit = exports.AVPlayBufferOption = exports.AVPlayDisplayMode = exports.AVPlayPlayerState = exports.restoreAsync = exports.restore = exports.suspend = exports.getVersion = exports.getStreamingProperty = exports.setStreamingProperty = exports.getTotalTrackInfo = exports.getCurrentStreamInfo = exports.setSelectTrack = exports.setDisplayMethod = exports.setSubtitlePosition = exports.setExternalSubtitlePath = exports.setSilentSubtitle = exports.unsetSoundAnalysisListener = exports.setSoundAnalysisListener = exports.getUID = exports.setDrm = exports.setListener = exports.setSpeed = exports.setBufferingParam = exports.setTimeoutForBuffering = exports.getCurrentTime = exports.getDuration = exports.jumpBackward = exports.jumpForward = exports.pause = exports.getState = exports.stop = exports.seekTo = exports.play = exports.setDisplayRect = exports.prepareAsync = exports.prepare = exports.close = exports.open = void 0;
-const { avplay } = window.webapis;
-exports.open = avplay.open, exports.close = avplay.close, exports.prepare = avplay.prepare, exports.prepareAsync = avplay.prepareAsync, exports.setDisplayRect = avplay.setDisplayRect, exports.play = avplay.play, exports.seekTo = avplay.seekTo, exports.stop = avplay.stop, exports.getState = avplay.getState, exports.pause = avplay.pause, exports.jumpForward = avplay.jumpForward, exports.jumpBackward = avplay.jumpBackward, exports.getDuration = avplay.getDuration, exports.getCurrentTime = avplay.getCurrentTime, exports.setTimeoutForBuffering = avplay.setTimeoutForBuffering, exports.setBufferingParam = avplay.setBufferingParam, exports.setSpeed = avplay.setSpeed, exports.setListener = avplay.setListener, exports.setDrm = avplay.setDrm, exports.getUID = avplay.getUID, exports.setSoundAnalysisListener = avplay.setSoundAnalysisListener, exports.unsetSoundAnalysisListener = avplay.unsetSoundAnalysisListener, exports.setSilentSubtitle = avplay.setSilentSubtitle, exports.setExternalSubtitlePath = avplay.setExternalSubtitlePath, exports.setSubtitlePosition = avplay.setSubtitlePosition, exports.setDisplayMethod = avplay.setDisplayMethod, exports.setSelectTrack = avplay.setSelectTrack, exports.getCurrentStreamInfo = avplay.getCurrentStreamInfo, exports.getTotalTrackInfo = avplay.getTotalTrackInfo, exports.setStreamingProperty = avplay.setStreamingProperty, exports.getStreamingProperty = avplay.getStreamingProperty, exports.getVersion = avplay.getVersion, exports.suspend = avplay.suspend, exports.restore = avplay.restore, exports.restoreAsync = avplay.restoreAsync;
-var AVPlayPlayerState;
-(function (AVPlayPlayerState) {
-    AVPlayPlayerState["NONE"] = "NONE";
-    AVPlayPlayerState["IDLE"] = "IDLE";
-    AVPlayPlayerState["READY"] = "READY";
-    AVPlayPlayerState["PLAYING"] = "PLAYING";
-    AVPlayPlayerState["PAUSED"] = "PAUSED";
-})(AVPlayPlayerState = exports.AVPlayPlayerState || (exports.AVPlayPlayerState = {}));
-var AVPlayDisplayMode;
-(function (AVPlayDisplayMode) {
-    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_LETTER_BOX"] = "PLAYER_DISPLAY_MODE_LETTER_BOX";
-    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_FULL_SCREEN"] = "PLAYER_DISPLAY_MODE_FULL_SCREEN";
-    AVPlayDisplayMode["PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO"] = "PLAYER_DISPLAY_MODE_AUTO_ASPECT_RATIO";
-})(AVPlayDisplayMode = exports.AVPlayDisplayMode || (exports.AVPlayDisplayMode = {}));
-var AVPlayBufferOption;
-(function (AVPlayBufferOption) {
-    AVPlayBufferOption["PLAYER_BUFFER_FOR_PLAY"] = "PLAYER_BUFFER_FOR_PLAY";
-    AVPlayBufferOption["PLAYER_BUFFER_FOR_RESUME"] = "PLAYER_BUFFER_FOR_RESUME";
-})(AVPlayBufferOption = exports.AVPlayBufferOption || (exports.AVPlayBufferOption = {}));
-var AVPlayBufferSizeUnit;
-(function (AVPlayBufferSizeUnit) {
-    AVPlayBufferSizeUnit["PLAYER_BUFFER_SIZE_IN_BYTE"] = "PLAYER_BUFFER_SIZE_IN_BYTE";
-    AVPlayBufferSizeUnit["PLAYER_BUFFER_SIZE_IN_SECOND"] = "PLAYER_BUFFER_SIZE_IN_SECOND";
-})(AVPlayBufferSizeUnit = exports.AVPlayBufferSizeUnit || (exports.AVPlayBufferSizeUnit = {}));
-var AVPlayStreamingPropertyType;
-(function (AVPlayStreamingPropertyType) {
-    AVPlayStreamingPropertyType["COOKIE"] = "COOKIE";
-    AVPlayStreamingPropertyType["USER_AGENT"] = "USER_AGENT";
-    AVPlayStreamingPropertyType["PREBUFFER_MODE"] = "PREBUFFER_MODE";
-    AVPlayStreamingPropertyType["ADAPTIVE_INFO"] = "ADAPTIVE_INFO";
-    AVPlayStreamingPropertyType["SET_MODE_4K"] = "SET_MODE_4K";
-    AVPlayStreamingPropertyType["PROPERTY_HD_AUDIO"] = "PROPERTY_HD_AUDIO";
-    AVPlayStreamingPropertyType["LISTEN_SPARSE_TRACK"] = "LISTEN_SPARSE_TRACK";
-    AVPlayStreamingPropertyType["IS_LIVE"] = "IS_LIVE";
-    AVPlayStreamingPropertyType["AVAILABLE_BITRATE"] = "AVAILABLE_BITRATE";
-    AVPlayStreamingPropertyType["GET_LIVE_DURATION"] = "GET_LIVE_DURATION";
-    AVPlayStreamingPropertyType["CURRENT_BANDWIDTH"] = "CURRENT_BANDWIDTH";
-    AVPlayStreamingPropertyType["WIDEVINE"] = "WIDEVINE";
-    AVPlayStreamingPropertyType["SET_VR360_MODE"] = "SET_VR360_MODE";
-    AVPlayStreamingPropertyType["USE_VIDEOMIXER"] = "USE_VIDEOMIXER";
-    AVPlayStreamingPropertyType["SET_MIXEDFRAME"] = "SET_MIXEDFRAME";
-    AVPlayStreamingPropertyType["PORTRAIT_MODE"] = "PORTRAIT_MODE";
-})(AVPlayStreamingPropertyType = exports.AVPlayStreamingPropertyType || (exports.AVPlayStreamingPropertyType = {}));
-var AVPlayDrmType;
-(function (AVPlayDrmType) {
-    AVPlayDrmType["PLAYREADY"] = "PLAYREADY";
-    AVPlayDrmType["EME_PLAYREADY"] = "EME_PLAYREADY";
-    AVPlayDrmType["VERIMATRIX"] = "VERIMATRIX";
-    AVPlayDrmType["WIDEVINE_CDM"] = "WIDEVINE_CDM";
-    AVPlayDrmType["EME_WIDEVINE_CDM"] = "EME_WIDEVINE_CDM";
-})(AVPlayDrmType = exports.AVPlayDrmType || (exports.AVPlayDrmType = {}));
-var AVPlayDrmOperation;
-(function (AVPlayDrmOperation) {
-    AVPlayDrmOperation["SetProperties"] = "SetProperties";
-    AVPlayDrmOperation["InstallLicense"] = "InstallLicense";
-    AVPlayDrmOperation["ProcessInitiator"] = "ProcessInitiator";
-    AVPlayDrmOperation["GetUID"] = "GetUID";
-    AVPlayDrmOperation["Initialize"] = "Initialize";
-    AVPlayDrmOperation["Finalize"] = "Finalize";
-    AVPlayDrmOperation["widevine_license_data"] = "widevine_license_data";
-    AVPlayDrmOperation["widevine_app_session"] = "widevine_app_session";
-    AVPlayDrmOperation["widevine_data_type"] = "widevine_data_type";
-})(AVPlayDrmOperation = exports.AVPlayDrmOperation || (exports.AVPlayDrmOperation = {}));
-var AVPlayStreamType;
-(function (AVPlayStreamType) {
-    AVPlayStreamType["VIDEO"] = "VIDEO";
-    AVPlayStreamType["AUDIO"] = "AUDIO";
-    AVPlayStreamType["TEXT"] = "TEXT";
-})(AVPlayStreamType = exports.AVPlayStreamType || (exports.AVPlayStreamType = {}));
-var AVPlayError;
-(function (AVPlayError) {
-    AVPlayError["PLAYER_ERROR_NONE"] = "PLAYER_ERROR_NONE";
-    AVPlayError["PLAYER_ERROR_INVALID_PARAMETER"] = "PLAYER_ERROR_INVALID_PARAMETER";
-    AVPlayError["PLAYER_ERROR_NO_SUCH_FILE"] = "PLAYER_ERROR_NO_SUCH_FILE";
-    AVPlayError["PLAYER_ERROR_INVALID_OPERATION"] = "PLAYER_ERROR_INVALID_OPERATION";
-    AVPlayError["PLAYER_ERROR_SEEK_FAILED"] = "PLAYER_ERROR_SEEK_FAILED";
-    AVPlayError["PLAYER_ERROR_INVALID_STATE"] = "PLAYER_ERROR_INVALID_STATE";
-    AVPlayError["PLAYER_ERROR_NOT_SUPPORTED_FILE"] = "PLAYER_ERROR_NOT_SUPPORTED_FILE";
-    AVPlayError["PLAYER_ERROR_NOT_SUPPORTED_FORMAT"] = "PLAYER_ERROR_NOT_SUPPORTED_FORMAT";
-    AVPlayError["PLAYER_ERROR_INVALID_URI"] = "PLAYER_ERROR_INVALID_URI";
-    AVPlayError["PLAYER_ERROR_CONNECTION_FAILED"] = "PLAYER_ERROR_CONNECTION_FAILED";
-    AVPlayError["PLAYER_ERROR_GENEREIC"] = "PLAYER_ERROR_GENEREIC";
-})(AVPlayError = exports.AVPlayError || (exports.AVPlayError = {}));
-var AVPlayEvent;
-(function (AVPlayEvent) {
-    AVPlayEvent["PLAYER_MSG_NONE"] = "PLAYER_MSG_NONE";
-    AVPlayEvent["PLAYER_MSG_RESOLUTION_CHANGED"] = "PLAYER_MSG_RESOLUTION_CHANGED";
-    AVPlayEvent["PLAYER_MSG_BITRATE_CHANGE"] = "PLAYER_MSG_BITRATE_CHANGE";
-    AVPlayEvent["PLAYER_MSG_FRAGMENT_INFO"] = "PLAYER_MSG_FRAGMENT_INFO";
-    AVPlayEvent["PLAYER_SPARSE_TRACK_DETECT"] = "PLAYER_SPARSE_TRACK_DETECT";
-    AVPlayEvent["PLAYER_STREAMING_EVENT"] = "PLAYER_STREAMING_EVENT";
-    AVPlayEvent["PLAYER_MSG_HTTP_ERROR_CODE"] = "PLAYER_MSG_HTTP_ERROR_CODE";
-    AVPlayEvent["PLAYER_MSG_DRM_CHALLENGE_DATA"] = "PLAYER_MSG_DRM_CHALLENGE_DATA";
-})(AVPlayEvent = exports.AVPlayEvent || (exports.AVPlayEvent = {}));
-
-
-/***/ }),
-
-/***/ "./src/avplaystore.ts":
-/*!****************************!*\
-  !*** ./src/avplaystore.ts ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPlayer = void 0;
-const { avplaystore } = window.webapis;
-exports.getPlayer = avplaystore.getPlayer;
-
-
-/***/ }),
-
-/***/ "./src/billing.ts":
-/*!************************!*\
-  !*** ./src/billing.ts ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TVServerType = exports.isServiceAvailable = exports.cancelSubscription = exports.getUserPurchaseList = exports.getServiceCountryAvailability = exports.verifyInvoice = exports.applyInvoice = exports.getProductsList = exports.buyItem = exports.getVersion = void 0;
-const { billing } = window.webapis;
-exports.getVersion = billing.getVersion, exports.buyItem = billing.buyItem, exports.getProductsList = billing.getProductsList, exports.applyInvoice = billing.applyInvoice, exports.verifyInvoice = billing.verifyInvoice, exports.getServiceCountryAvailability = billing.getServiceCountryAvailability, exports.getUserPurchaseList = billing.getUserPurchaseList, exports.cancelSubscription = billing.cancelSubscription, exports.isServiceAvailable = billing.isServiceAvailable;
-var TVServerType;
-(function (TVServerType) {
-    TVServerType["DEV"] = "DEV";
-    TVServerType["PRD"] = "PRD";
-})(TVServerType = exports.TVServerType || (exports.TVServerType = {}));
-
-
-/***/ }),
-
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
@@ -309,224 +95,326 @@ var TVServerType;
 
 "use strict";
 
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.WebAPIException = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = exports.webapis = void 0;
-const webapis = __importStar(__webpack_require__(/*! ./webapis */ "./src/webapis.ts"));
-exports.webapis = webapis;
-const adinfo = __importStar(__webpack_require__(/*! ./adinfo */ "./src/adinfo.ts"));
-exports.adinfo = adinfo;
-const appcommon = __importStar(__webpack_require__(/*! ./appcommon */ "./src/appcommon.ts"));
-exports.appcommon = appcommon;
-const avinfo = __importStar(__webpack_require__(/*! ./avinfo */ "./src/avinfo.ts"));
-exports.avinfo = avinfo;
-const avplay = __importStar(__webpack_require__(/*! ./avplay */ "./src/avplay.ts"));
-exports.avplay = avplay;
-const avplaystore = __importStar(__webpack_require__(/*! ./avplaystore */ "./src/avplaystore.ts"));
-exports.avplaystore = avplaystore;
-const billing = __importStar(__webpack_require__(/*! ./billing */ "./src/billing.ts"));
-exports.billing = billing;
-const network = __importStar(__webpack_require__(/*! ./network */ "./src/network.ts"));
-exports.network = network;
-const productinfo = __importStar(__webpack_require__(/*! ./productinfo */ "./src/productinfo.ts"));
-exports.productinfo = productinfo;
-const sso = __importStar(__webpack_require__(/*! ./sso */ "./src/sso.ts"));
-exports.sso = sso;
-const tvinfo = __importStar(__webpack_require__(/*! ./tvinfo */ "./src/tvinfo.ts"));
-exports.tvinfo = tvinfo;
-const widgetdata = __importStar(__webpack_require__(/*! ./widgetdata */ "./src/widgetdata.ts"));
-exports.widgetdata = widgetdata;
-const WebAPIException = __importStar(__webpack_require__(/*! ./webapiexception */ "./src/webapiexception.ts"));
-exports.WebAPIException = WebAPIException;
-
-
-/***/ }),
-
-/***/ "./src/network.ts":
-/*!************************!*\
-  !*** ./src/network.ts ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.NetworkWiFiEncryptionType = exports.NetworkWiFiSecurityMode = exports.NetworkState = exports.NetworkActiveConnectionType = exports.NetworkIpMode = exports.checkCurrentIpWith60Field = exports.getCurrentDhcpOption60Field = exports.removeDhcpOption60Field = exports.setDhcpOption60Field = exports.getSecondaryDns = exports.getWiFiEncryptionType = exports.getWiFiSecurityMode = exports.getWiFiSignalStrengthLevel = exports.getWiFiSsid = exports.removeNetworkStateChangeListener = exports.addNetworkStateChangeListener = exports.getActiveConnectionType = exports.getTVName = exports.getIp = exports.getDns = exports.getMac = exports.getGateway = exports.getSubnetMask = exports.getIpMode = exports.isConnectedToGateway = exports.getVersion = void 0;
-const { network } = window.webapis;
-exports.getVersion = network.getVersion, exports.isConnectedToGateway = network.isConnectedToGateway, exports.getIpMode = network.getIpMode, exports.getSubnetMask = network.getSubnetMask, exports.getGateway = network.getGateway, exports.getMac = network.getMac, exports.getDns = network.getDns, exports.getIp = network.getIp, exports.getTVName = network.getTVName, exports.getActiveConnectionType = network.getActiveConnectionType, exports.addNetworkStateChangeListener = network.addNetworkStateChangeListener, exports.removeNetworkStateChangeListener = network.removeNetworkStateChangeListener, exports.getWiFiSsid = network.getWiFiSsid, exports.getWiFiSignalStrengthLevel = network.getWiFiSignalStrengthLevel, exports.getWiFiSecurityMode = network.getWiFiSecurityMode, exports.getWiFiEncryptionType = network.getWiFiEncryptionType, exports.getSecondaryDns = network.getSecondaryDns, exports.setDhcpOption60Field = network.setDhcpOption60Field, exports.removeDhcpOption60Field = network.removeDhcpOption60Field, exports.getCurrentDhcpOption60Field = network.getCurrentDhcpOption60Field, exports.checkCurrentIpWith60Field = network.checkCurrentIpWith60Field, exports.NetworkIpMode = network.NetworkIpMode, exports.NetworkActiveConnectionType = network.NetworkActiveConnectionType, exports.NetworkState = network.NetworkState, exports.NetworkWiFiSecurityMode = network.NetworkWiFiSecurityMode, exports.NetworkWiFiEncryptionType = network.NetworkWiFiEncryptionType;
-
-
-/***/ }),
-
-/***/ "./src/productinfo.ts":
-/*!****************************!*\
-  !*** ./src/productinfo.ts ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.isDisplayRotatorSupported = exports.isUHDAModel = exports.removeSystemConfigChangeListener = exports.addSystemConfigChangeListener = exports.setSystemConfig = exports.getSystemConfig = exports.getLocalSet = exports.getNoGlass3dSupport = exports.isWallModel = exports.getRealModel = exports.is8KPanelSupported = exports.isUdPanelSupported = exports.isTtvSupported = exports.isSoccerModeEnabled = exports.getTunerEpop = exports.getSmartTVServerVersion = exports.getSmartTVServerType = exports.getModel = exports.getModelCode = exports.getDuid = exports.getFirmware = exports.getVersion = exports.ProductInfoSiServerType = exports.ProductInfoNoGlass3dSupport = exports.ProductInfoConfigKey = void 0;
-const { productinfo } = window.webapis;
-exports.ProductInfoConfigKey = productinfo.ProductInfoConfigKey, exports.ProductInfoNoGlass3dSupport = productinfo.ProductInfoNoGlass3dSupport, exports.ProductInfoSiServerType = productinfo.ProductInfoSiServerType, exports.getVersion = productinfo.getVersion, exports.getFirmware = productinfo.getFirmware, exports.getDuid = productinfo.getDuid, exports.getModelCode = productinfo.getModelCode, exports.getModel = productinfo.getModel, exports.getSmartTVServerType = productinfo.getSmartTVServerType, exports.getSmartTVServerVersion = productinfo.getSmartTVServerVersion, exports.getTunerEpop = productinfo.getTunerEpop, exports.isSoccerModeEnabled = productinfo.isSoccerModeEnabled, exports.isTtvSupported = productinfo.isTtvSupported, exports.isUdPanelSupported = productinfo.isUdPanelSupported, exports.is8KPanelSupported = productinfo.is8KPanelSupported, exports.getRealModel = productinfo.getRealModel, exports.isWallModel = productinfo.isWallModel, exports.getNoGlass3dSupport = productinfo.getNoGlass3dSupport, exports.getLocalSet = productinfo.getLocalSet, exports.getSystemConfig = productinfo.getSystemConfig, exports.setSystemConfig = productinfo.setSystemConfig, exports.addSystemConfigChangeListener = productinfo.addSystemConfigChangeListener, exports.removeSystemConfigChangeListener = productinfo.removeSystemConfigChangeListener, exports.isUHDAModel = productinfo.isUHDAModel, exports.isDisplayRotatorSupported = productinfo.isDisplayRotatorSupported;
-
-
-/***/ }),
-
-/***/ "./src/sso.ts":
-/*!********************!*\
-  !*** ./src/sso.ts ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SsoLoginState = exports.showCreateAccountView = exports.getLoginStatus = exports.getLoginUid = exports.getGuid = exports.showAccountView = exports.getVersion = void 0;
-const { sso } = window.webapis;
-exports.getVersion = sso.getVersion, exports.showAccountView = sso.showAccountView, exports.getGuid = sso.getGuid, exports.getLoginUid = sso.getLoginUid, exports.getLoginStatus = sso.getLoginStatus, exports.showCreateAccountView = sso.showCreateAccountView;
+exports.WebAPIException = exports.systeminfo = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = exports.webapis = exports.SsoLoginState = exports.TvInfoValue = exports.TvInfoKey = exports.TvInfoMenuValue = exports.TvInfoMenuKey = exports.ProductInfoSiServerType = exports.ProductInfoNoGlass3dSupport = exports.ProductInfoConfigKey = exports.NetworkWiFiEncryptionType = exports.NetworkWiFiSecurityMode = exports.NetworkState = exports.NetworkActiveConnectionType = exports.NetworkIpMode = exports.AvInfoDigitalCompMode = exports.AppCommonScreenSaverState = void 0;
+var AppCommonScreenSaverState;
+(function (AppCommonScreenSaverState) {
+    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_OFF"] = 0] = "SCREEN_SAVER_OFF";
+    AppCommonScreenSaverState[AppCommonScreenSaverState["SCREEN_SAVER_ON"] = 1] = "SCREEN_SAVER_ON";
+})(AppCommonScreenSaverState = exports.AppCommonScreenSaverState || (exports.AppCommonScreenSaverState = {}));
+var AvInfoDigitalCompMode;
+(function (AvInfoDigitalCompMode) {
+    AvInfoDigitalCompMode[AvInfoDigitalCompMode["DOLBY_DIGITAL_COMP_MODE_LINE"] = 0] = "DOLBY_DIGITAL_COMP_MODE_LINE";
+    AvInfoDigitalCompMode[AvInfoDigitalCompMode["DOLBY_DIGITAL_COMP_MODE_RF"] = 1] = "DOLBY_DIGITAL_COMP_MODE_RF";
+})(AvInfoDigitalCompMode = exports.AvInfoDigitalCompMode || (exports.AvInfoDigitalCompMode = {}));
+var NetworkIpMode;
+(function (NetworkIpMode) {
+    NetworkIpMode[NetworkIpMode["NONE"] = 0] = "NONE";
+    NetworkIpMode[NetworkIpMode["STATIC"] = 1] = "STATIC";
+    NetworkIpMode[NetworkIpMode["DYNAMIC"] = 2] = "DYNAMIC";
+    NetworkIpMode[NetworkIpMode["AUTO"] = 3] = "AUTO";
+    NetworkIpMode[NetworkIpMode["FIXED"] = 4] = "FIXED";
+    NetworkIpMode[NetworkIpMode["UNKNOWN"] = 5] = "UNKNOWN";
+})(NetworkIpMode = exports.NetworkIpMode || (exports.NetworkIpMode = {}));
+var NetworkActiveConnectionType;
+(function (NetworkActiveConnectionType) {
+    NetworkActiveConnectionType[NetworkActiveConnectionType["DISCONNECTED"] = 0] = "DISCONNECTED";
+    NetworkActiveConnectionType[NetworkActiveConnectionType["WIFI"] = 1] = "WIFI";
+    NetworkActiveConnectionType[NetworkActiveConnectionType["CELLULAR"] = 2] = "CELLULAR";
+    NetworkActiveConnectionType[NetworkActiveConnectionType["ETHERNET"] = 3] = "ETHERNET";
+})(NetworkActiveConnectionType = exports.NetworkActiveConnectionType || (exports.NetworkActiveConnectionType = {}));
+var NetworkState;
+(function (NetworkState) {
+    NetworkState[NetworkState["LAN_CABLE_ATTACHED"] = 1] = "LAN_CABLE_ATTACHED";
+    NetworkState[NetworkState["LAN_CABLE_DETACHED"] = 2] = "LAN_CABLE_DETACHED";
+    NetworkState[NetworkState["LAN_CABLE_STATE_UNKNOWN"] = 3] = "LAN_CABLE_STATE_UNKNOWN";
+    NetworkState[NetworkState["GATEWAY_CONNECTED"] = 4] = "GATEWAY_CONNECTED";
+    NetworkState[NetworkState["GATEWAY_DISCONNECTED"] = 5] = "GATEWAY_DISCONNECTED";
+    NetworkState[NetworkState["WIFI_MODULE_STATE_ATTACHED"] = 6] = "WIFI_MODULE_STATE_ATTACHED";
+    NetworkState[NetworkState["WIFI_MODULE_STATE_DETACHED"] = 7] = "WIFI_MODULE_STATE_DETACHED";
+    NetworkState[NetworkState["WIFI_MODULE_STATE_UNKNOWN"] = 8] = "WIFI_MODULE_STATE_UNKNOWN";
+})(NetworkState = exports.NetworkState || (exports.NetworkState = {}));
+var NetworkWiFiSecurityMode;
+(function (NetworkWiFiSecurityMode) {
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["WEP"] = 1] = "WEP";
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["WPA_PSK"] = 2] = "WPA_PSK";
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["WPA2_PSK"] = 3] = "WPA2_PSK";
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["EAP"] = 4] = "EAP";
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["NONE"] = 5] = "NONE";
+    NetworkWiFiSecurityMode[NetworkWiFiSecurityMode["UNKNOWN"] = 6] = "UNKNOWN";
+})(NetworkWiFiSecurityMode = exports.NetworkWiFiSecurityMode || (exports.NetworkWiFiSecurityMode = {}));
+var NetworkWiFiEncryptionType;
+(function (NetworkWiFiEncryptionType) {
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["WEP"] = 1] = "WEP";
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["TKIP"] = 2] = "TKIP";
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["AES"] = 3] = "AES";
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["TKIP_AES_MIXED"] = 4] = "TKIP_AES_MIXED";
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["NONE"] = 5] = "NONE";
+    NetworkWiFiEncryptionType[NetworkWiFiEncryptionType["UNKNOWN"] = 6] = "UNKNOWN";
+})(NetworkWiFiEncryptionType = exports.NetworkWiFiEncryptionType || (exports.NetworkWiFiEncryptionType = {}));
+var ProductInfoConfigKey;
+(function (ProductInfoConfigKey) {
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_DATA_SERVICE"] = 0] = "CONFIG_KEY_DATA_SERVICE";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SERVICE_COUNTRY"] = 1] = "CONFIG_KEY_SERVICE_COUNTRY";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SHOPLOGO"] = 2] = "CONFIG_KEY_SHOPLOGO";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_CHANNELBOUND_APPS_TICKER"] = 3] = "CONFIG_KEY_CHANNELBOUND_APPS_TICKER";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_SOCCER_PANEL"] = 4] = "CONFIG_KEY_SUPPORT_SOCCER_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_ONTV_PANEL"] = 5] = "CONFIG_KEY_SUPPORT_ONTV_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_NEWSON_PANEL"] = 6] = "CONFIG_KEY_SUPPORT_NEWSON_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_MYCONTENTS_PANEL"] = 7] = "CONFIG_KEY_SUPPORT_MYCONTENTS_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_GAME_PANEL"] = 8] = "CONFIG_KEY_SUPPORT_GAME_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_CLIPS_PANEL"] = 9] = "CONFIG_KEY_SUPPORT_CLIPS_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SUPPORT_APPS_PANEL"] = 10] = "CONFIG_KEY_SUPPORT_APPS_PANEL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_SYSTEM_PNP_COUNTRY"] = 11] = "CONFIG_KEY_SYSTEM_PNP_COUNTRY";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_PIN"] = 12] = "CONFIG_KEY_PIN";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_ACRCT"] = 13] = "CONFIG_GPMURL_KEY_ACRCT";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_AM"] = 14] = "CONFIG_GPMURL_KEY_AM";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_AQUA"] = 15] = "CONFIG_GPMURL_KEY_AQUA";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_APPS"] = 16] = "CONFIG_GPMURL_KEY_APPS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_CDS"] = 17] = "CONFIG_GPMURL_KEY_CDS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_CLIPS"] = 18] = "CONFIG_GPMURL_KEY_CLIPS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_EMP"] = 19] = "CONFIG_GPMURL_KEY_EMP";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_EXPLORER3D"] = 20] = "CONFIG_GPMURL_KEY_EXPLORER3D";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_FITNESS"] = 21] = "CONFIG_GPMURL_KEY_FITNESS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_FKP"] = 22] = "CONFIG_GPMURL_KEY_FKP";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_GAME"] = 23] = "CONFIG_GPMURL_KEY_GAME";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_GEO"] = 24] = "CONFIG_GPMURL_KEY_GEO";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_HA"] = 25] = "CONFIG_GPMURL_KEY_HA";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_HBBTV"] = 26] = "CONFIG_GPMURL_KEY_HBBTV";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_IMS"] = 27] = "CONFIG_GPMURL_KEY_IMS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_KBO"] = 28] = "CONFIG_GPMURL_KEY_KBO";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_KIDS"] = 29] = "CONFIG_GPMURL_KEY_KIDS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_NOTICE"] = 30] = "CONFIG_GPMURL_KEY_NOTICE";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_LC"] = 31] = "CONFIG_GPMURL_KEY_LC";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_MSVC"] = 32] = "CONFIG_GPMURL_KEY_MSVC";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_NCS"] = 33] = "CONFIG_GPMURL_KEY_NCS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_NEWSON"] = 34] = "CONFIG_GPMURL_KEY_NEWSON";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_ONTV"] = 35] = "CONFIG_GPMURL_KEY_ONTV";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_PUSH"] = 36] = "CONFIG_GPMURL_KEY_PUSH";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_RM"] = 37] = "CONFIG_GPMURL_KEY_RM";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SAPPHIRE"] = 38] = "CONFIG_GPMURL_KEY_SAPPHIRE";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SAS"] = 39] = "CONFIG_GPMURL_KEY_SAS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SCS"] = 40] = "CONFIG_GPMURL_KEY_SCS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SEARCHALL"] = 41] = "CONFIG_GPMURL_KEY_SEARCHALL";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SHS"] = 42] = "CONFIG_GPMURL_KEY_SHS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SOCCER"] = 43] = "CONFIG_GPMURL_KEY_SOCCER";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_SSO"] = 44] = "CONFIG_GPMURL_KEY_SSO";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_STS"] = 45] = "CONFIG_GPMURL_KEY_STS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_TWITTERGW"] = 46] = "CONFIG_GPMURL_KEY_TWITTERGW";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_ACCESSIBILITY_TTS"] = 47] = "CONFIG_KEY_ACCESSIBILITY_TTS";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_MW_MSO_CONFIG"] = 48] = "CONFIG_KEY_MW_MSO_CONFIG";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_EXTRA"] = 49] = "CONFIG_GPMURL_KEY_EXTRA";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_GPMURL_KEY_MUSIC"] = 50] = "CONFIG_GPMURL_KEY_MUSIC";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_ACTIVE_CATEGORY"] = 51] = "CONFIG_KEY_ACTIVE_CATEGORY";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_MUTE"] = 52] = "CONFIG_KEY_MUTE";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_OSD_NUMBERPAD"] = 53] = "CONFIG_KEY_OSD_NUMBERPAD";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_OSD_VIRTUALREMOTE"] = 54] = "CONFIG_KEY_OSD_VIRTUALREMOTE";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_STATUS_NETFLIX"] = 55] = "CONFIG_KEY_STATUS_NETFLIX";
+    ProductInfoConfigKey[ProductInfoConfigKey["CONFIG_KEY_MULTIVIEW_INFO"] = 56] = "CONFIG_KEY_MULTIVIEW_INFO";
+})(ProductInfoConfigKey = exports.ProductInfoConfigKey || (exports.ProductInfoConfigKey = {}));
+var ProductInfoNoGlass3dSupport;
+(function (ProductInfoNoGlass3dSupport) {
+    ProductInfoNoGlass3dSupport[ProductInfoNoGlass3dSupport["NO_GLASS_3D_NOT_SUPPORTED"] = 0] = "NO_GLASS_3D_NOT_SUPPORTED";
+    ProductInfoNoGlass3dSupport[ProductInfoNoGlass3dSupport["NO_GLASS_3D_SUPPORTED"] = 1] = "NO_GLASS_3D_SUPPORTED";
+})(ProductInfoNoGlass3dSupport = exports.ProductInfoNoGlass3dSupport || (exports.ProductInfoNoGlass3dSupport = {}));
+var ProductInfoSiServerType;
+(function (ProductInfoSiServerType) {
+    ProductInfoSiServerType[ProductInfoSiServerType["SI_TYPE_OPERATIING_SERVER"] = 0] = "SI_TYPE_OPERATIING_SERVER";
+    ProductInfoSiServerType[ProductInfoSiServerType["SI_TYPE_DEVELOPMENT_SERVER"] = 1] = "SI_TYPE_DEVELOPMENT_SERVER";
+    ProductInfoSiServerType[ProductInfoSiServerType["SI_TYPE_DEVELOPING_SERVER"] = 2] = "SI_TYPE_DEVELOPING_SERVER";
+})(ProductInfoSiServerType = exports.ProductInfoSiServerType || (exports.ProductInfoSiServerType = {}));
+var TvInfoMenuKey;
+(function (TvInfoMenuKey) {
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_ONOFF_KEY"] = 0] = "CAPTION_ONOFF_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_MODE_KEY"] = 1] = "CAPTION_MODE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_FONT_SIZE_KEY"] = 2] = "CAPTION_FONT_SIZE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_FONT_STYLE_KEY"] = 3] = "CAPTION_FONT_STYLE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_FG_COLOR_KEY"] = 4] = "CAPTION_FG_COLOR_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_FG_OPACITY_KEY"] = 5] = "CAPTION_FG_OPACITY_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_BG_COLOR_KEY"] = 6] = "CAPTION_BG_COLOR_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_BG_OPACITY_KEY"] = 7] = "CAPTION_BG_OPACITY_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_EDGE_TYPE_KEY"] = 8] = "CAPTION_EDGE_TYPE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_EDGE_COLOR_KEY"] = 9] = "CAPTION_EDGE_COLOR_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_WINDOW_COLOR_KEY"] = 10] = "CAPTION_WINDOW_COLOR_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_WINDOW_OPACITY_KEY"] = 11] = "CAPTION_WINDOW_OPACITY_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["ACCESSIBILITY_FOCUS_ZOOM"] = 12] = "ACCESSIBILITY_FOCUS_ZOOM";
+    TvInfoMenuKey[TvInfoMenuKey["ACCESSIBILITY_HIGH_CONTRAST"] = 13] = "ACCESSIBILITY_HIGH_CONTRAST";
+    TvInfoMenuKey[TvInfoMenuKey["SMARTHUB_CHANNEL_BOUND_APPS_TICKER"] = 14] = "SMARTHUB_CHANNEL_BOUND_APPS_TICKER";
+    TvInfoMenuKey[TvInfoMenuKey["VOICE_GUIDE_KEY"] = 15] = "VOICE_GUIDE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["SUBTITLE_ONOFF_KEY"] = 16] = "SUBTITLE_ONOFF_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["SUBTITLE_MODE_KEY"] = 17] = "SUBTITLE_MODE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["PRIMARY_AUDIO_LANGUAGE_KEY"] = 18] = "PRIMARY_AUDIO_LANGUAGE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["SECONDARY_AUDIO_LANGUAGE_KEY"] = 19] = "SECONDARY_AUDIO_LANGUAGE_KEY";
+    TvInfoMenuKey[TvInfoMenuKey["ACCESSIBILITY_VOICE_GUIDE_SPEED"] = 20] = "ACCESSIBILITY_VOICE_GUIDE_SPEED";
+    TvInfoMenuKey[TvInfoMenuKey["CAPTION_STYLE_KEY"] = 21] = "CAPTION_STYLE_KEY";
+})(TvInfoMenuKey = exports.TvInfoMenuKey || (exports.TvInfoMenuKey = {}));
+var TvInfoMenuValue;
+(function (TvInfoMenuValue) {
+    TvInfoMenuValue[TvInfoMenuValue["OFF"] = 0] = "OFF";
+    TvInfoMenuValue[TvInfoMenuValue["ON"] = 1] = "ON";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OFF"] = 0] = "CAPTION_OFF";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_ON"] = 1] = "CAPTION_ON";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_DEFAULT"] = 0] = "CAPTION_MODE_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE1"] = 1] = "CAPTION_MODE_SERVICE1";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE2"] = 2] = "CAPTION_MODE_SERVICE2";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE3"] = 3] = "CAPTION_MODE_SERVICE3";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE4"] = 4] = "CAPTION_MODE_SERVICE4";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE5"] = 5] = "CAPTION_MODE_SERVICE5";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_SERVICE6"] = 6] = "CAPTION_MODE_SERVICE6";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_CC1"] = 7] = "CAPTION_MODE_CC1";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_CC2"] = 8] = "CAPTION_MODE_CC2";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_CC3"] = 9] = "CAPTION_MODE_CC3";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_CC4"] = 10] = "CAPTION_MODE_CC4";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_TEXT1"] = 11] = "CAPTION_MODE_TEXT1";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_TEXT2"] = 12] = "CAPTION_MODE_TEXT2";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_TEXT3"] = 13] = "CAPTION_MODE_TEXT3";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_MODE_TEXT4"] = 14] = "CAPTION_MODE_TEXT4";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_SIZE_DEFAULT"] = 0] = "CAPTION_SIZE_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_SIZE_SMALL"] = 1] = "CAPTION_SIZE_SMALL";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_SIZE_STANDARD"] = 2] = "CAPTION_SIZE_STANDARD";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_SIZE_LARGE"] = 3] = "CAPTION_SIZE_LARGE";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_SIZE_EXTRA_LARGE"] = 4] = "CAPTION_SIZE_EXTRA_LARGE";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_DEFAULT"] = 0] = "CAPTION_FONT_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE0"] = 1] = "CAPTION_FONT_STYLE0";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE1"] = 2] = "CAPTION_FONT_STYLE1";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE2"] = 3] = "CAPTION_FONT_STYLE2";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE3"] = 4] = "CAPTION_FONT_STYLE3";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE4"] = 5] = "CAPTION_FONT_STYLE4";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE5"] = 6] = "CAPTION_FONT_STYLE5";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_FONT_STYLE6"] = 7] = "CAPTION_FONT_STYLE6";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_DEFAULT"] = 0] = "CAPTION_COLOR_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_WHITE"] = 1] = "CAPTION_COLOR_WHITE";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_BLACK"] = 2] = "CAPTION_COLOR_BLACK";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_RED"] = 3] = "CAPTION_COLOR_RED";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_GREEN"] = 4] = "CAPTION_COLOR_GREEN";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_BLUE"] = 5] = "CAPTION_COLOR_BLUE";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_YELLOW"] = 6] = "CAPTION_COLOR_YELLOW";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_MAGENTA"] = 7] = "CAPTION_COLOR_MAGENTA";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_COLOR_CYAN"] = 8] = "CAPTION_COLOR_CYAN";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_SOLID"] = 0] = "CAPTION_OPACITY_SOLID";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_FLASH"] = 1] = "CAPTION_OPACITY_FLASH";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_TRANSLUCENT"] = 2] = "CAPTION_OPACITY_TRANSLUCENT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_TRANSPARENT"] = 3] = "CAPTION_OPACITY_TRANSPARENT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_DEFAULT"] = 4] = "CAPTION_OPACITY_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_HIGHLY_TRANSLUCENT"] = 5] = "CAPTION_OPACITY_HIGHLY_TRANSLUCENT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT"] = 6] = "CAPTION_OPACITY_SLIGHTLY_TRANSLUCENT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_EDGE_NONE"] = 0] = "CAPTION_EDGE_NONE";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_EDGE_RAISED"] = 1] = "CAPTION_EDGE_RAISED";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_EDGE_DEPRESSED"] = 2] = "CAPTION_EDGE_DEPRESSED";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_EDGE_UNIFORM"] = 3] = "CAPTION_EDGE_UNIFORM";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_EDGE_DROP_SHADOWED"] = 4] = "CAPTION_EDGE_DROP_SHADOWED";
+    TvInfoMenuValue[TvInfoMenuValue["SUBTITLE_NORMAL"] = 0] = "SUBTITLE_NORMAL";
+    TvInfoMenuValue[TvInfoMenuValue["SUBTITLE_HEARING_IMMPEARED"] = 1] = "SUBTITLE_HEARING_IMMPEARED";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_AFR"] = "AFR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_AKA"] = "AKA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_AMH"] = "AMH";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ARA"] = "ARA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ASM"] = "ASM";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_BEN"] = "BEN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_BUL"] = "BUL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_CAT"] = "CAT";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_CHI"] = "CHI";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_CMN"] = "CMN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_CZE"] = "CZE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_DAG"] = "DAG";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_DAN"] = "DAN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_DUT"] = "DUT";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ENG"] = "ENG";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_EST"] = "EST";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_EUS"] = "EUS";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_EWE"] = "EWE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_FIN"] = "FIN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_FRE"] = "FRE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GAA"] = "GAA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GER"] = "GER";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GLA"] = "GLA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GLG"] = "GLG";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GOS"] = "GOS";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GRE"] = "GRE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_GUJ"] = "GUJ";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_HAU"] = "HAU";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_HEB"] = "HEB";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_HIN"] = "HIN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_HRV"] = "HRV";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_HUN"] = "HUN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_IGB"] = "IGB";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_IND"] = "IND";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_IRI"] = "IRI";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ITA"] = "ITA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_JPN"] = "JPN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_KAN"] = "KAN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_KOK"] = "KOK";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_KOR"] = "KOR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_LAV"] = "LAV";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_LIT"] = "LIT";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_MAL"] = "MAL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_MAO"] = "MAO";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_MAR"] = "MAR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_MSA"] = "MSA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_NBL"] = "NBL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_NOR"] = "NOR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_NSO"] = "NSO";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_NZI"] = "NZI";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ORI"] = "ORI";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_PAN"] = "PAN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_PER"] = "PER";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_POL"] = "POL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_POR"] = "POR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_QAA"] = "QAA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_QAB"] = "QAB";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_QAC"] = "QAC";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ROM"] = "ROM";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_RUS"] = "RUS";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SLK"] = "SLK";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SOT"] = "SOT";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SPA"] = "SPA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SRP"] = "SRP";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SSW"] = "SSW";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SWA"] = "SWA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_SWE"] = "SWE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TAM"] = "TAM";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TEL"] = "TEL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_THA"] = "THA";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TSN"] = "TSN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TSO"] = "TSO";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TUR"] = "TUR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_TWI"] = "TWI";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_UKR"] = "UKR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_VAL"] = "VAL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_VEN"] = "VEN";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_VIE"] = "VIE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_WEL"] = "WEL";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_XHO"] = "XHO";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_XSM"] = "XSM";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_YOR"] = "YOR";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_YUE"] = "YUE";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ZHO"] = "ZHO";
+    TvInfoMenuValue["AUDIO_LANGUAGE_CODE_ZUL"] = "ZUL";
+    TvInfoMenuValue["VOICEGUIDE_SPEED_VERY_FAST"] = "VERY_FAST";
+    TvInfoMenuValue["VOICEGUIDE_SPEED_FAST"] = "FAST";
+    TvInfoMenuValue["VOICEGUIDE_SPEED_NORMAL"] = "NORMAL";
+    TvInfoMenuValue["VOICEGUIDE_SPEED_SLOW"] = "SLOW";
+    TvInfoMenuValue["VOICEGUIDE_SPEED_VERY_SLOW"] = "VERY_SLOW";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_STYLE_DEFAULT"] = 0] = "CAPTION_STYLE_DEFAULT";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_STYLE_BOLD"] = 1] = "CAPTION_STYLE_BOLD";
+    TvInfoMenuValue[TvInfoMenuValue["CAPTION_STYLE_ITALIC"] = 2] = "CAPTION_STYLE_ITALIC";
+})(TvInfoMenuValue = exports.TvInfoMenuValue || (exports.TvInfoMenuValue = {}));
+var TvInfoKey;
+(function (TvInfoKey) {
+    TvInfoKey[TvInfoKey["TV_VIEWER_BG_EXECUTABLE"] = 0] = "TV_VIEWER_BG_EXECUTABLE";
+})(TvInfoKey = exports.TvInfoKey || (exports.TvInfoKey = {}));
+var TvInfoValue;
+(function (TvInfoValue) {
+    TvInfoValue[TvInfoValue["TV_VIEWER_BG_NOT_EXECUTABLE"] = 0] = "TV_VIEWER_BG_NOT_EXECUTABLE";
+    TvInfoValue[TvInfoValue["TV_VIEWER_BG_EXECUTABLE"] = 1] = "TV_VIEWER_BG_EXECUTABLE";
+})(TvInfoValue = exports.TvInfoValue || (exports.TvInfoValue = {}));
 var SsoLoginState;
 (function (SsoLoginState) {
-    /**
-     * Not logged in
-     */
     SsoLoginState[SsoLoginState["SSO_NOT_LOGIN"] = 0] = "SSO_NOT_LOGIN";
-    /**
-     * Logged in
-     */
     SsoLoginState[SsoLoginState["SSO_LOGIN"] = 1] = "SSO_LOGIN";
 })(SsoLoginState = exports.SsoLoginState || (exports.SsoLoginState = {}));
-
-
-/***/ }),
-
-/***/ "./src/tvinfo.ts":
-/*!***********************!*\
-  !*** ./src/tvinfo.ts ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TvInfoValue = exports.TvInfoKey = exports.TvInfoMenuValue = exports.TvInfoMenuKey = exports.registerInAppCaptionControl = exports.showCaption = exports.getTvInfoValue = exports.isTvsPicSizeResized = exports.removeCaptionChangeListener = exports.addCaptionChangeListener = exports.getMenuValue = exports.getVersion = void 0;
-const { tvinfo } = window.webapis;
-exports.getVersion = tvinfo.getVersion, exports.getMenuValue = tvinfo.getMenuValue, exports.addCaptionChangeListener = tvinfo.addCaptionChangeListener, exports.removeCaptionChangeListener = tvinfo.removeCaptionChangeListener, exports.isTvsPicSizeResized = tvinfo.isTvsPicSizeResized, exports.getTvInfoValue = tvinfo.getTvInfoValue, exports.showCaption = tvinfo.showCaption, exports.registerInAppCaptionControl = tvinfo.registerInAppCaptionControl, exports.TvInfoMenuKey = tvinfo.TvInfoMenuKey, exports.TvInfoMenuValue = tvinfo.TvInfoMenuValue, exports.TvInfoKey = tvinfo.TvInfoKey, exports.TvInfoValue = tvinfo.TvInfoValue;
-
-
-/***/ }),
-
-/***/ "./src/webapiexception.ts":
-/*!********************************!*\
-  !*** ./src/webapiexception.ts ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UNKNOWN_ERR = exports.SERVICE_NOT_AVAILABLE_ERR = exports.IO_ERR = exports.INVALID_VALUES_ERR = exports.DATA_CLONE_ERR = exports.INVALID_NODE_TYPE_ERR = exports.TIMEOUT_ERR = exports.QUOTA_EXCEEDED_ERR = exports.URL_MISMATCH_ERR = exports.ABORT_ERR = exports.NETWORK_ERR = exports.SECURITY_ERR = exports.TYPE_MISMATCH_ERR = exports.VALIDATION_ERR = exports.INVALID_ACCESS_ERR = exports.NAMESPACE_ERR = exports.INVALID_MODIFICATION_ERR = exports.SYNTAX_ERR = exports.INVALID_STATE_ERR = exports.INUSE_ATTRIBUTE_ERR = exports.NOT_SUPPORTED_ERR = exports.NOT_FOUND_ERR = exports.NO_MODIFICATION_ALLOWED_ERR = exports.NO_DATA_ALLOWED_ERR = exports.INVALID_CHARACTER_ERR = exports.WRONG_DOCUMENT_ERR = exports.HIERARCHY_REQUEST_ERR = exports.DOMSTRING_SIZE_ERR = exports.INDEX_SIZE_ERR = void 0;
-const { WebAPIException } = window.webapis;
-exports.INDEX_SIZE_ERR = WebAPIException.INDEX_SIZE_ERR, exports.DOMSTRING_SIZE_ERR = WebAPIException.DOMSTRING_SIZE_ERR, exports.HIERARCHY_REQUEST_ERR = WebAPIException.HIERARCHY_REQUEST_ERR, exports.WRONG_DOCUMENT_ERR = WebAPIException.WRONG_DOCUMENT_ERR, exports.INVALID_CHARACTER_ERR = WebAPIException.INVALID_CHARACTER_ERR, exports.NO_DATA_ALLOWED_ERR = WebAPIException.NO_DATA_ALLOWED_ERR, exports.NO_MODIFICATION_ALLOWED_ERR = WebAPIException.NO_MODIFICATION_ALLOWED_ERR, exports.NOT_FOUND_ERR = WebAPIException.NOT_FOUND_ERR, exports.NOT_SUPPORTED_ERR = WebAPIException.NOT_SUPPORTED_ERR, exports.INUSE_ATTRIBUTE_ERR = WebAPIException.INUSE_ATTRIBUTE_ERR, exports.INVALID_STATE_ERR = WebAPIException.INVALID_STATE_ERR, exports.SYNTAX_ERR = WebAPIException.SYNTAX_ERR, exports.INVALID_MODIFICATION_ERR = WebAPIException.INVALID_MODIFICATION_ERR, exports.NAMESPACE_ERR = WebAPIException.NAMESPACE_ERR, exports.INVALID_ACCESS_ERR = WebAPIException.INVALID_ACCESS_ERR, exports.VALIDATION_ERR = WebAPIException.VALIDATION_ERR, exports.TYPE_MISMATCH_ERR = WebAPIException.TYPE_MISMATCH_ERR, exports.SECURITY_ERR = WebAPIException.SECURITY_ERR, exports.NETWORK_ERR = WebAPIException.NETWORK_ERR, exports.ABORT_ERR = WebAPIException.ABORT_ERR, exports.URL_MISMATCH_ERR = WebAPIException.URL_MISMATCH_ERR, exports.QUOTA_EXCEEDED_ERR = WebAPIException.QUOTA_EXCEEDED_ERR, exports.TIMEOUT_ERR = WebAPIException.TIMEOUT_ERR, exports.INVALID_NODE_TYPE_ERR = WebAPIException.INVALID_NODE_TYPE_ERR, exports.DATA_CLONE_ERR = WebAPIException.DATA_CLONE_ERR, exports.INVALID_VALUES_ERR = WebAPIException.INVALID_VALUES_ERR, exports.IO_ERR = WebAPIException.IO_ERR, exports.SERVICE_NOT_AVAILABLE_ERR = WebAPIException.SERVICE_NOT_AVAILABLE_ERR, exports.UNKNOWN_ERR = WebAPIException.UNKNOWN_ERR;
-
-
-/***/ }),
-
-/***/ "./src/webapis.ts":
-/*!************************!*\
-  !*** ./src/webapis.ts ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.WebAPIException = exports.widgetdata = exports.tvinfo = exports.sso = exports.productinfo = exports.network = exports.billing = exports.avplaystore = exports.avplay = exports.avinfo = exports.appcommon = exports.adinfo = void 0;
-const adinfo = __importStar(__webpack_require__(/*! ./adinfo */ "./src/adinfo.ts"));
-exports.adinfo = adinfo;
-const appcommon = __importStar(__webpack_require__(/*! ./appcommon */ "./src/appcommon.ts"));
-exports.appcommon = appcommon;
-const avinfo = __importStar(__webpack_require__(/*! ./avinfo */ "./src/avinfo.ts"));
-exports.avinfo = avinfo;
-const avplay = __importStar(__webpack_require__(/*! ./avplay */ "./src/avplay.ts"));
-exports.avplay = avplay;
-const avplaystore = __importStar(__webpack_require__(/*! ./avplaystore */ "./src/avplaystore.ts"));
-exports.avplaystore = avplaystore;
-const billing = __importStar(__webpack_require__(/*! ./billing */ "./src/billing.ts"));
-exports.billing = billing;
-const network = __importStar(__webpack_require__(/*! ./network */ "./src/network.ts"));
-exports.network = network;
-const productinfo = __importStar(__webpack_require__(/*! ./productinfo */ "./src/productinfo.ts"));
-exports.productinfo = productinfo;
-const sso = __importStar(__webpack_require__(/*! ./sso */ "./src/sso.ts"));
-exports.sso = sso;
-const tvinfo = __importStar(__webpack_require__(/*! ./tvinfo */ "./src/tvinfo.ts"));
-exports.tvinfo = tvinfo;
-const widgetdata = __importStar(__webpack_require__(/*! ./widgetdata */ "./src/widgetdata.ts"));
-exports.widgetdata = widgetdata;
-const WebAPIException = __importStar(__webpack_require__(/*! ./webapiexception */ "./src/webapiexception.ts"));
-exports.WebAPIException = WebAPIException;
-
-
-/***/ }),
-
-/***/ "./src/widgetdata.ts":
-/*!***************************!*\
-  !*** ./src/widgetdata.ts ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.remove = exports.write = exports.read = exports.getVersion = void 0;
-const { widgetdata } = window.webapis;
-exports.getVersion = widgetdata.getVersion, exports.read = widgetdata.read, exports.write = widgetdata.write, exports.remove = widgetdata.remove;
+_a = window.webapis, exports.webapis = _a.webapis, exports.adinfo = _a.adinfo, exports.appcommon = _a.appcommon, exports.avinfo = _a.avinfo, exports.avplay = _a.avplay, exports.avplaystore = _a.avplaystore, exports.billing = _a.billing, exports.network = _a.network, exports.productinfo = _a.productinfo, exports.sso = _a.sso, exports.tvinfo = _a.tvinfo, exports.widgetdata = _a.widgetdata, exports.systeminfo = _a.systeminfo, exports.WebAPIException = _a.WebAPIException;
 
 
 /***/ }),
