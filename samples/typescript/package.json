@@ -12,9 +12,9 @@
         "checkSerial": "sdb devices",
         "build": "tizen build-web --exclude node_modules/* -- ./",
         "pkg": "tizen package --type wgt -- .buildResult/ --output ./ --sign ",
-        "install-pkg": "tizen install --name TsTizenWebApp.wgt -- ./ --serial %SERIAL%",
-        "uninstall": "tizen uninstall --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%",
-        "launch": "tizen run --pkgid LE4lnBVtIt.TizenWebApp --serial %SERIAL%"
+        "install-pkg": "tizen install --name SampleTypescript.wgt -- ./ --serial %SERIAL%",
+        "uninstall": "tizen uninstall --pkgid tE56cTDSwO.SampleTypescript --serial %SERIAL%",
+        "launch": "tizen run --pkgid tE56cTDSwO.SampleTypescript --serial %SERIAL%"
     },
     "keywords": [],
     "author": "",
